@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Sistema Bancario</title>
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- titulo del sistema  -->
+    <header class="header">
+        <div class="header-content">
+            <img class="img-banco" src="assets/img-banco.png" alt="Logo Banco">
+            <h1 class="titulo-principal">Mini Sistema Bancario</h1>
+            <img class="img-banco" src="assets/img-banco.png" alt="Logo Banco">
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="bienvenida">
+            <h1 id="welcome"></h1>
+            <p class="subtitulo">¿Qué desea hacer hoy?</p>
+        </section>
+
+        <div class="menu-principal">
+            <h2>Menú Principal</h2>
+            <!-- mensajes de notificacion dependiendo de la accion  -->
+            <div id="mensaje" class="mensaje"></div>
+            <!-- muestra del saldo  -->
+            <div class="saldo-container">
+                <span>Su saldo:</span>
+                <h3 class="valor-saldo" id="saldo">0</h3>
+            </div>
+            <div class="botones">
+                <!-- funcion consultar saldo  -->
+                <button class="btn btn-consulta" onclick="consultarMonto()" style="    background: linear-gradient(90deg, #ff8c00 0%, #fff200 100%);
+">Consultar Saldo</button>
+
+                <!-- funcion depositar  -->
+                <label for="depositar" class="input-label">
+                    <input type="number" id="depositar" name="depositar" placeholder="Cantidad a depositar">
+                </label>
+                <button class="btn btn-depositar" onclick="depositarDinero()"style="    background-color: #85c1fd;" >Depositar Dinero</button>
+
+                <!-- funcion retirar  -->
+                <label for="retirar" class="input-label">
+                    <input type="number" id="retirar" name="retirar" placeholder="Cantidad a retirar">
+                </label>
+                <button class="btn btn-retirar" onclick="retirar()" style="    background-color: #9b9b9b;" >Retirar Dinero</button>
+
+                <button class="btn btn-salir" onclick="salir()">Salir</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2025 Laura Diaz. Todos los derechos reservados. | Mini Sistema Bancario</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

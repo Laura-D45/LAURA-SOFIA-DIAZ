@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body {
+    font-family: "Google Sans Code", Arial, sans-serif;
+    background: #f5f6fa;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #ffe600;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 24px 0 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.img-banco {
+    width: 80px;
+    border-radius: 12px;
+}
+.titulo-principal {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #003e7c;
+    letter-spacing: 1px;
+}
+
+.container {
+    max-width: 480px;
+    margin: 40px auto 80px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+}
+.bienvenida {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.subtitulo {
+    color: #666;
+    font-size: 1.1rem;
+    margin-top: 8px;
+}
+.menu-principal h2 {
+    color: #003366;
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+    text-align: center;
+}
+.saldo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+.valor-saldo {
+    color: #00953b;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: stretch;
+}
+.btn {
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.btn:hover {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(0,0,0,0.12);
+}
+.input-label {
+    display: block;
+    margin-bottom: 0;
+}
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+input[type="number"]:focus {
+    border-color: #003366;
+    outline: none;
+}
+.btn-salir {
+    background: #f12c2c;
+    color: #fff;
+}
+.btn-salir:hover {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(0,0,0,0.12);
+}
+footer{
+    background-color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 14px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: "Google Sans Code", monospace;
+    font-weight: 500;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
