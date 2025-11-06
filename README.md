@@ -1,4 +1,4 @@
-<h1 align="left">HOSPITAL MANAGEMENT SYSTEM API</h1>
+<h1 align="center">HOSPITAL MANAGEMENT SYSTEM API</h1>
 
 ###
 
@@ -30,7 +30,7 @@
 
 <br clear="both">
 
-<img align="right" height="82" src="https://cdn.pixabay.com/animation/2025/10/11/13/42/13-42-08-619_512.gif"  />
+<img align="right" height="82" src="https://img.icons8.com/?size=120&id=LnbPCrdjbCEI&format=gif&color=f7f7f7"  />
 
 ###
 
@@ -46,7 +46,7 @@
 
 ###
 
-<img align="left" height="82" src="https://cdn.pixabay.com/animation/2025/10/11/13/42/13-42-08-619_512.gif"  />
+<img align="left" height="82" src="https://img.icons8.com/?size=120&id=LnbPCrdjbCEI&format=gif&color=f7f7f7"  />
 
 ###
 
@@ -56,6 +56,66 @@
 
 <br clear="both">
 
-<h1 align="left">Hello World!!</h1>
+<h1 align="center">Colaboradores</h1>
+
+###
+
+<p align="left">Cuatro estudiantes del Tecnologo Analisis y Desarrollo de software</p>
+
+###
+
+<br clear="both">
+
+<img align="right" height="126" src="https://avatars.githubusercontent.com/u/202680907?v=4"  />
+
+###
+
+<h3 align="left">Laura Diaz Laura-diaz765</h3>
+
+###
+
+<p align="left">Atenta y ordenada a la hora de realizar las tareas asignadas a su cargo.  Encargada de realizar pruebas testing unitarias y de integración.</p>
+
+###
+
+<br clear="both">
+
+<img align="left" height="120" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZiHilApdF4-XRxuaqxK-y4ufavffVZ4xSZ2n0vF-2DapMTbM_"  />
+
+###
+
+<h3 align="right">Yeimi Silva Yeimi-Silva01</h3>
+
+###
+
+<p align="left">Comprometida y puntual a la hora de llevar a cabo sus funciones como desarrolladora de la creación de documentación de las rutas del sistema y pruebas testing unitarias.</p>
+
+###
+
+<h3 align="left">Anamaria Alejandra AALGarcia</h3>
+
+###
+
+<br clear="both">
+
+<img align="right" height="126" src="https://i.pinimg.com/736x/d3/40/c3/d340c328484b6114a8e535df071990b8.jpg"  />
+
+###
+
+<p align="left">Pensamiento analitico y escucha activa, sus habilidades fueron utilez a la hora de la asignación de labores y resolución de conflictos. Encargada de realizar pruebas de testing unitarias.</p>
+
+###
+
+<h3 align="left">Dajaryth Hernandez Dj-Yenerys</h3>
+
+###
+
+<br clear="both">
+
+<img align="left" height="126" src="https://avatars.githubusercontent.com/u/199952284?v=4"  />
+
+###
+
+<p align="right">Lider de grupo, encargada de la organización, creación y gestión de las herramientas SCRUM y repositorio, lugar de almacenamiento del proyecto. Seguimiento de las labores y tareas asignadas. <br>Encargada de realizar pruebas de testing unitarias y de integración.</p>
 
 ###
