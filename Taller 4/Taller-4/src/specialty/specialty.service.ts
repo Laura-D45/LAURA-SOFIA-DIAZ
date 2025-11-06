@@ -50,6 +50,6 @@ export class SpecialtyService {
         if (!specialty) {
             throw new Error('Specialty not found');
         }
-        await this.specialtyRepository.delete(specialty);
+        return this.specialtyRepository.delete(id);
     }
 }
