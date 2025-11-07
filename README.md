@@ -143,13 +143,3 @@
 <p align="right">Lider de grupo, encargada de la organización, creación y gestión de las herramientas SCRUM y repositorio, lugar de almacenamiento del proyecto. Seguimiento de las labores y tareas asignadas. <br>Encargada de realizar pruebas de testing unitarias y de integración.</p>
 
 ###
-
-<br clear="both">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DjYenerys/DjYenerys/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DjYenerys/DjYenerys/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/DjYenerys/DjYenerys/output/pacman-contribution-graph.svg">
-</picture>
-
-###
