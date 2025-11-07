@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">Hospital management system es un sistema creado para la gestión hospitalaria es decir  permite el agendamiento de citas, gestión de medicamentos, pascientes, personal medico, entre otras funciones.</p>
+<p align="left">Hospital management system es un sistema creado para la gestión hospitalaria es decir  permite el agendamiento de citas, gestión de medicamentos, pacientes, personal medico, entre otras funciones.</p>
 
 ###
 
@@ -24,7 +24,7 @@
 
 ###
 
-<p align="left">JEST  es el runner, libreria de aserciones y framework principal. Maneja la ejecución de los tests, las suites (describe) y los casos individuales (it o test). Se utiliza para las aserciones (expect()) y los matchers (toEqual, toHaveBeenCalledWith, etc.), que validan los resultados. Tambien se utilizó para implementar los mock y espías, se usa el sistema de mocks de Jest (jest.fn(), mockResolvedValue) para simular el comportamiento de las dependencias externas.</p>
+<p align="left">JEST  es el runner, libreria de aserciones y framework principal. Maneja la ejecución de los test|, las suites (describe) y los casos individuales (it o test). Se utiliza para las aserciones (expect()) y los matchers (toEqual, toHaveBeenCalledWith, etc.), que validan los resultados. Tambien se utilizó para implementar los mock y espías, se usa el sistema de mocks de Jest (jest.fn(), mockResolvedValue) para simular el comportamiento de las dependencias externas.</p>
 
 ###
 
@@ -42,7 +42,7 @@
 
 ###
 
-<p align="right">@nestjs/testing como herramienta de manejo de dependencias e integración con TypeORM, Proporciona la clase TestingModule y utilidades para crear un entorno de pruebas aislado, lo que permite inyectar y probar los servicios y controladores. Se usa la función getRepositoryToken() para inyectar y reemplazar los repositorios de TypeORM por los Mocks definidos en los tests, permitiendo aislar la lógica de negocio del servicio.</p>
+<p align="right">@nestjs/testing como herramienta de manejo de dependencias e integración con TypeORM, Proporciona la clase TestingModule y utilidades para crear un entorno de pruebas aislado, lo que permite inyectar y probar los servicios y controladores. Se usa la función getRepositoryToken() para inyectar y reemplazar los repositorios de TypeORM por los Mocks definidos en los test, permitiendo aislar la lógica de negocio del servicio.</p>
 
 ###
 
@@ -126,7 +126,7 @@
 
 ###
 
-<p align="left">Pensamiento analitico y escucha activa, sus habilidades fueron utilez a la hora de la asignación de labores y resolución de conflictos. Encargada de realizar pruebas de testing unitarias.</p>
+<p align="left">Pensamiento analitico y escucha activa, sus habilidades fueron utiles a la hora de la asignación de labores y resolución de conflictos. Encargada de realizar pruebas de testing unitarias.</p>
 
 ###
 
@@ -141,5 +141,15 @@
 ###
 
 <p align="right">Lider de grupo, encargada de la organización, creación y gestión de las herramientas SCRUM y repositorio, lugar de almacenamiento del proyecto. Seguimiento de las labores y tareas asignadas. <br>Encargada de realizar pruebas de testing unitarias y de integración.</p>
+
+###
+
+<br clear="both">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DjYenerys/DjYenerys/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DjYenerys/DjYenerys/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/DjYenerys/DjYenerys/output/pacman-contribution-graph.svg">
+</picture>
 
 ###
