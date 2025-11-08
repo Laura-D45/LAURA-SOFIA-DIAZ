@@ -165,17 +165,21 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#birthDate" >birthDate</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#document" >document</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#email" >email</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#gender" >gender</a>
@@ -183,9 +187,11 @@
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#lastname" >lastname</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#name" >name</a>
@@ -193,9 +199,11 @@
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#phone" >phone</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#role" >role</a>
                             </li>
@@ -225,6 +233,7 @@
                     <a name="birthDate"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>birthDate</b></span>
                         <a href="#birthDate"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -241,13 +250,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsDateString()<br />
+                            @ApiPropertyOptional({name: &#x27;birthDate&#x27;, type: String, description: &#x27;Nueva fecha de nacimiento en formato ISO.&#x27;, example: &#x27;1991-03-22&#x27;})<br />@IsDateString()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/person/dto/update-person.dto.ts:23</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/person/dto/update-person.dto.ts:51</a></div>
                         </td>
                     </tr>
 
@@ -260,6 +269,7 @@
                 <td class="col-md-4">
                     <a name="document"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>document</b></span>
                         <a href="#document"><span class="icon ion-ios-link"></span></a>
@@ -277,13 +287,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />
+                            @ApiPropertyOptional({name: &#x27;document&#x27;, type: String, description: &#x27;Nuevo número de documento de identidad.&#x27;, example: &#x27;1025487963&#x27;})<br />@IsString()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/person/dto/update-person.dto.ts:20</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/person/dto/update-person.dto.ts:41</a></div>
                         </td>
                     </tr>
 
@@ -296,6 +306,7 @@
                 <td class="col-md-4">
                     <a name="email"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>email</b></span>
                         <a href="#email"><span class="icon ion-ios-link"></span></a>
@@ -313,13 +324,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsEmail()<br />
+                            @ApiPropertyOptional({name: &#x27;email&#x27;, type: String, description: &#x27;Correo electrónico actualizado.&#x27;, example: &#x27;sofia.ramirez.updated@example.com&#x27;})<br />@IsEmail()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/person/dto/update-person.dto.ts:26</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/person/dto/update-person.dto.ts:61</a></div>
                         </td>
                     </tr>
 
@@ -332,6 +343,7 @@
                 <td class="col-md-4">
                     <a name="gender"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>gender</b></span>
@@ -350,13 +362,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@IsOptional()<br />
+                            @ApiPropertyOptional({name: &#x27;gender&#x27;, type: String, description: &#x27;Género actualizado de la persona.&#x27;, example: &#x27;Femenino&#x27;})<br />@IsString()<br />@IsOptional()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/person/dto/update-person.dto.ts:37</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="93" class="link-to-prism">src/person/dto/update-person.dto.ts:93</a></div>
                         </td>
                     </tr>
 
@@ -369,6 +381,7 @@
                 <td class="col-md-4">
                     <a name="lastname"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>lastname</b></span>
@@ -387,13 +400,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@Length(2, 100)<br />
+                            @ApiPropertyOptional({name: &#x27;lastname&#x27;, type: String, description: &#x27;Apellido actualizado de la persona.&#x27;, example: &#x27;Ramírez López&#x27;})<br />@IsString()<br />@Length(2, 100)<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/person/dto/update-person.dto.ts:17</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/person/dto/update-person.dto.ts:31</a></div>
                         </td>
                     </tr>
 
@@ -406,6 +419,7 @@
                 <td class="col-md-4">
                     <a name="name"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>name</b></span>
@@ -424,13 +438,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@Length(2, 100)<br />
+                            @ApiPropertyOptional({name: &#x27;name&#x27;, type: String, description: &#x27;Nombre actualizado de la persona.&#x27;, example: &#x27;Sofía Carolina&#x27;})<br />@IsString()<br />@Length(2, 100)<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/person/dto/update-person.dto.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/person/dto/update-person.dto.ts:20</a></div>
                         </td>
                     </tr>
 
@@ -443,6 +457,7 @@
                 <td class="col-md-4">
                     <a name="phone"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>phone</b></span>
@@ -461,13 +476,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@Length(2, 100)<br />
+                            @ApiPropertyOptional({name: &#x27;phone&#x27;, type: String, description: &#x27;Teléfono de contacto actualizado.&#x27;, example: &#x27;+57 320 658 4732&#x27;})<br />@IsString()<br />@Length(2, 100)<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/person/dto/update-person.dto.ts:30</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/person/dto/update-person.dto.ts:72</a></div>
                         </td>
                     </tr>
 
@@ -480,6 +495,7 @@
                 <td class="col-md-4">
                     <a name="role"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>role</b></span>
                         <a href="#role"><span class="icon ion-ios-link"></span></a>
@@ -497,13 +513,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />
+                            @ApiPropertyOptional({name: &#x27;role&#x27;, type: String, description: &#x27;Rol actualizado de la persona.&#x27;, example: undefined})<br />@IsString()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/person/dto/update-person.dto.ts:33</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/person/dto/update-person.dto.ts:82</a></div>
                         </td>
                     </tr>
 
@@ -526,36 +542,92 @@
 import { CreatePersonDto } from &quot;./create-person.dto&quot;;
 import { PartialType } from &quot;@nestjs/mapped-types&quot;;
 import { Role } from &quot;../person.entity&quot;;
+import { ApiPropertyOptional } from &quot;@nestjs/swagger&quot;;
 
 
 
 // Update Person DTO
 export class UpdatePersonDto extends PartialType(CreatePersonDto) {
 
+    @ApiPropertyOptional({
+    name: &#x27;name&#x27;,
+    type: String,
+    description: &#x27;Nombre actualizado de la persona.&#x27;,
+    example: &#x27;Sofía Carolina&#x27;,
+    })
     @IsString()
     @Length(2, 100)
     name: string;
 
+
+    @ApiPropertyOptional({
+    name: &#x27;lastname&#x27;,
+    type: String,
+    description: &#x27;Apellido actualizado de la persona.&#x27;,
+    example: &#x27;Ramírez López&#x27;,
+    })
     @IsString()
     @Length(2, 100)
     lastname: string;
 
+
+@ApiPropertyOptional({
+    name: &#x27;document&#x27;,
+    type: String,
+    description: &#x27;Nuevo número de documento de identidad.&#x27;,
+    example: &#x27;1025487963&#x27;,
+    })
     @IsString()
     document: string;
 
+
+    @ApiPropertyOptional({
+    name: &#x27;birthDate&#x27;,
+    type: String,
+    description: &#x27;Nueva fecha de nacimiento en formato ISO.&#x27;,
+    example: &#x27;1991-03-22&#x27;,
+    })
     @IsDateString()
     birthDate: Date;
 
+
+    @ApiPropertyOptional({
+    name: &#x27;email&#x27;,
+    type: String,
+    description: &#x27;Correo electrónico actualizado.&#x27;,
+    example: &#x27;sofia.ramirez.updated@example.com&#x27;,
+    })
     @IsEmail()
     email: string;
 
+
+    @ApiPropertyOptional({
+    name: &#x27;phone&#x27;,
+    type: String,
+    description: &#x27;Teléfono de contacto actualizado.&#x27;,
+    example: &#x27;+57 320 658 4732&#x27;,
+    })
     @IsString()
     @Length(2, 100)
     phone: string;
 
+
+    @ApiPropertyOptional({
+    name: &#x27;role&#x27;,
+    type: String,
+    description: &#x27;Rol actualizado de la persona.&#x27;,
+    example: Role.Patient,
+    })
     @IsString()
     role: Role;
 
+
+    @ApiPropertyOptional({
+    name: &#x27;gender&#x27;,
+    type: String,
+    description: &#x27;Género actualizado de la persona.&#x27;,
+    example: &#x27;Femenino&#x27;,
+    })
     @IsString()
     @IsOptional()
     gender: string;

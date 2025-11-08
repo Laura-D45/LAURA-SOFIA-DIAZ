@@ -159,21 +159,38 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#create" >create</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#delete" >delete</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#findAll" >findAll</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#findOne" >findOne</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#update" >update</a>
                             </li>
@@ -201,6 +218,9 @@
                     <a name="create"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>create</b></span>
                         <a href="#create"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -217,14 +237,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Post()<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Crear una nueva especialidad&#x27;, description: &#x27;Crea una especialidad médica en el sistema utilizando los datos enviados en el cuerpo de la solicitud.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;La especialidad fue creada exitosamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Los datos enviados son inválidos o incompletos.&#x27;})<br />@Post()<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="15"
-                                    class="link-to-prism">src/specialty/specialty.controller.ts:15</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="30"
+                                    class="link-to-prism">src/specialty/specialty.controller.ts:30</a></div>
                         </td>
                     </tr>
 
@@ -277,6 +297,10 @@
                     <a name="delete"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>delete</b></span>
                         <a href="#delete"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -293,14 +317,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Delete(&#x27;:id&#x27;)<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Eliminar una especialidad&#x27;, description: &#x27;Elimina una especialidad del sistema utilizando su identificador único.&#x27;})<br />@ApiParam({name: &#x27;id&#x27;, required: true, type: Number, description: &#x27;Identificador de la especialidad que se desea eliminar.&#x27;, example: 1})<br />@ApiResponse({status: undefined, description: &#x27;La especialidad fue eliminada exitosamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontró la especialidad con el ID proporcionado.&#x27;})<br />@Delete(&#x27;:id&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="53"
-                                    class="link-to-prism">src/specialty/specialty.controller.ts:53</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="140"
+                                    class="link-to-prism">src/specialty/specialty.controller.ts:140</a></div>
                         </td>
                     </tr>
 
@@ -353,6 +377,8 @@
                     <a name="findAll"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>findAll</b></span>
                         <a href="#findAll"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -369,14 +395,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Get()<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Obtener todas las especialidades&#x27;, description: &#x27;Devuelve una lista con todas las especialidades médicas registradas en el sistema.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Lista obtenida exitosamente.&#x27;})<br />@Get()<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="23"
-                                    class="link-to-prism">src/specialty/specialty.controller.ts:23</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="47"
+                                    class="link-to-prism">src/specialty/specialty.controller.ts:47</a></div>
                         </td>
                     </tr>
 
@@ -399,6 +425,10 @@
                     <a name="findOne"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>findOne</b></span>
                         <a href="#findOne"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -415,14 +445,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Get(&#x27;:id&#x27;)<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Obtener una especialidad por ID&#x27;, description: &#x27;Busca y devuelve la información de una especialidad médica específica utilizando su identificador único.&#x27;})<br />@ApiParam({name: &#x27;id&#x27;, required: true, type: Number, description: &#x27;Identificador único de la especialidad a consultar.&#x27;, example: 1})<br />@ApiResponse({status: undefined, description: &#x27;Especialidad encontrada exitosamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontró una especialidad con el ID proporcionado.&#x27;})<br />@Get(&#x27;:id&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="32"
-                                    class="link-to-prism">src/specialty/specialty.controller.ts:32</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="77"
+                                    class="link-to-prism">src/specialty/specialty.controller.ts:77</a></div>
                         </td>
                     </tr>
 
@@ -475,6 +505,10 @@
                     <a name="update"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>update</b></span>
                         <a href="#update"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -491,14 +525,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Patch(&#x27;:id&#x27;)<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Actualizar una especialidad&#x27;, description: &#x27;Permite modificar los datos de una especialidad existente identificada por su ID.&#x27;})<br />@ApiParam({name: &#x27;id&#x27;, required: true, type: Number, description: &#x27;Identificador de la especialidad que se desea actualizar.&#x27;, example: 1})<br />@ApiResponse({status: undefined, description: &#x27;La especialidad fue actualizada exitosamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontró la especialidad con el ID proporcionado.&#x27;})<br />@Patch(&#x27;:id&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="41"
-                                    class="link-to-prism">src/specialty/specialty.controller.ts:41</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="107"
+                                    class="link-to-prism">src/specialty/specialty.controller.ts:107</a></div>
                         </td>
                     </tr>
 
@@ -560,10 +594,11 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Body, Controller, Get, Patch, Post, Delete, Param, ParseIntPipe } from &#x27;@nestjs/common&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Body, Controller, Get, Patch, Post, Delete, Param, ParseIntPipe, HttpStatus } from &#x27;@nestjs/common&#x27;;
 import { SpecialtyService } from &#x27;./specialty.service&#x27;;
 import { CreateSpecialtyDto } from &#x27;./dto/create-specialty.dto&#x27;;
 import { UpdateSpecialtyDto } from &#x27;./dto/update-speciality.dto&#x27;;
+import { ApiOperation, ApiParam, ApiResponse } from &#x27;@nestjs/swagger&#x27;;
 
 @Controller(&#x27;specialty&#x27;)
 export class SpecialtyController {
@@ -573,6 +608,20 @@ export class SpecialtyController {
   //Create a new specialty
   //http:localhost:3000/specialty
   //The JSON Body must be in the format of the CreateSpecialtyDto
+
+  @ApiOperation({
+    summary: &#x27;Crear una nueva especialidad&#x27;,
+    description: &#x27;Crea una especialidad médica en el sistema utilizando los datos enviados en el cuerpo de la solicitud.&#x27;
+  })
+  @ApiResponse({
+    status: HttpStatus.CREATED,
+    description: &#x27;La especialidad fue creada exitosamente.&#x27;,
+  })
+  @ApiResponse({
+    status: HttpStatus.BAD_REQUEST,
+    description: &#x27;Los datos enviados son inválidos o incompletos.&#x27;,
+  })
+
   @Post()
   create(@Body()dto: CreateSpecialtyDto) {
     return this.specialtyService.create(dto);
@@ -581,6 +630,15 @@ export class SpecialtyController {
   // ─── GET ───────────────────────────────────────────────
   //Get all specialties
   //http:localhost:3000/specialty
+
+  @ApiOperation({
+    summary: &#x27;Obtener todas las especialidades&#x27;,
+    description: &#x27;Devuelve una lista con todas las especialidades médicas registradas en el sistema.&#x27;
+  })
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description: &#x27;Lista obtenida exitosamente.&#x27;,
+  })
   @Get()
   findAll() {
     return this.specialtyService.findAll();
@@ -590,6 +648,27 @@ export class SpecialtyController {
   //Get specialty by id
   //http:localhost:3000/specialty/1
   //The param id is the id of the specialty, is required
+
+  @ApiOperation({
+    summary: &#x27;Obtener una especialidad por ID&#x27;,
+    description: &#x27;Busca y devuelve la información de una especialidad médica específica utilizando su identificador único.&#x27;
+  })
+  @ApiParam({
+    name: &#x27;id&#x27;,
+    required: true,
+    type: Number,
+    description: &#x27;Identificador único de la especialidad a consultar.&#x27;,
+    example: 1,
+  })
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description: &#x27;Especialidad encontrada exitosamente.&#x27;
+  })
+  @ApiResponse({
+    status: HttpStatus.NOT_FOUND,
+    description: &#x27;No se encontró una especialidad con el ID proporcionado.&#x27;
+  })
+
   @Get(&#x27;:id&#x27;)
     findOne(@Param(&#x27;id&#x27;, ParseIntPipe) id: number) {
       return this.specialtyService.findOne(id);
@@ -599,6 +678,27 @@ export class SpecialtyController {
   //Update an specialty
   //http:localhost:3000/specialty/1
   //The param id is the id of the specialty, is required for update
+
+  @ApiOperation({
+    summary: &#x27;Actualizar una especialidad&#x27;,
+    description: &#x27;Permite modificar los datos de una especialidad existente identificada por su ID.&#x27;
+  })
+  @ApiParam({
+    name: &#x27;id&#x27;,
+    required: true,
+    type: Number,
+    description: &#x27;Identificador de la especialidad que se desea actualizar.&#x27;,
+    example: 1,
+  })
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description: &#x27;La especialidad fue actualizada exitosamente.&#x27;,
+  })
+  @ApiResponse({
+    status: HttpStatus.NOT_FOUND,
+    description: &#x27;No se encontró la especialidad con el ID proporcionado.&#x27;
+  })
+
   @Patch(&#x27;:id&#x27;)
   update(
     @Param(&#x27;id&#x27;, ParseIntPipe) id: number,
@@ -611,6 +711,27 @@ export class SpecialtyController {
   //Delete an specialty
   //http:localhost:3000/specialty/1
   //The param id is the id of the specialty, is required for delete
+
+  @ApiOperation({
+    summary: &#x27;Eliminar una especialidad&#x27;,
+    description: &#x27;Elimina una especialidad del sistema utilizando su identificador único.&#x27;
+  })
+  @ApiParam({
+    name: &#x27;id&#x27;,
+    required: true,
+    type: Number,
+    description: &#x27;Identificador de la especialidad que se desea eliminar.&#x27;,
+    example: 1,
+  })
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description: &#x27;La especialidad fue eliminada exitosamente.&#x27;
+  })
+  @ApiResponse({
+    status: HttpStatus.NOT_FOUND,
+    description: &#x27;No se encontró la especialidad con el ID proporcionado.&#x27;
+  })
+
   @Delete(&#x27;:id&#x27;)
   delete(@Body(&#x27;id&#x27;) id: number) {
     return this.specialtyService.delete(+id);

@@ -159,13 +159,16 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#date" >date</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#doctorId" >doctorId</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier">Optional</span>
@@ -173,19 +176,23 @@
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#officeId" >officeId</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#patientId" >patientId</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                     <span class="modifier">Optional</span>
                                 <a href="#reason" >reason</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier">Optional</span>
@@ -217,6 +224,7 @@
                     <a name="date"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>date</b></span>
                         <a href="#date"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -233,13 +241,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsDateString()<br />
+                            @ApiProperty({name: &#x27;date&#x27;, type: String, description: &#x27;Fecha y hora programada para la cita médica (formato ISO 8601).&#x27;, example: &#x27;2025-11-15T10:30:00.000Z&#x27;})<br />@IsDateString()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/appointment/dto/create-appointment.dto.ts:9</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/appointment/dto/create-appointment.dto.ts:18</a></div>
                         </td>
                     </tr>
 
@@ -252,6 +260,7 @@
                 <td class="col-md-4">
                     <a name="doctorId"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>doctorId</b></span>
                         <a href="#doctorId"><span class="icon ion-ios-link"></span></a>
@@ -269,13 +278,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsInt()<br />
+                            @ApiProperty({name: &#x27;doctorId&#x27;, type: Number, description: &#x27;Identificador del doctor asignado a la cita médica.&#x27;, example: 3})<br />@IsInt()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/appointment/dto/create-appointment.dto.ts:32</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/appointment/dto/create-appointment.dto.ts:73</a></div>
                         </td>
                     </tr>
 
@@ -288,6 +297,7 @@
                 <td class="col-md-4">
                     <a name="notes"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier">Optional</span>
@@ -307,13 +317,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@IsOptional()<br />
+                            @ApiPropertyOptional({name: &#x27;notes&#x27;, type: String, description: &#x27;Notas adicionales sobre la cita médica. Este campo es opcional.&#x27;, example: &#x27;El paciente solicitó atención prioritaria por síntomas recientes.&#x27;})<br />@IsString()<br />@IsOptional()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/appointment/dto/create-appointment.dto.ts:21</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/appointment/dto/create-appointment.dto.ts:46</a></div>
                         </td>
                     </tr>
 
@@ -326,6 +336,7 @@
                 <td class="col-md-4">
                     <a name="officeId"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>officeId</b></span>
                         <a href="#officeId"><span class="icon ion-ios-link"></span></a>
@@ -343,13 +354,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsInt()<br />
+                            @ApiProperty({name: &#x27;officeId&#x27;, type: Number, description: &#x27;Identificador de la oficina o consultorio donde se realizará la cita.&#x27;, example: 5})<br />@IsInt()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/appointment/dto/create-appointment.dto.ts:40</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/appointment/dto/create-appointment.dto.ts:97</a></div>
                         </td>
                     </tr>
 
@@ -362,6 +373,7 @@
                 <td class="col-md-4">
                     <a name="patientId"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>patientId</b></span>
                         <a href="#patientId"><span class="icon ion-ios-link"></span></a>
@@ -379,13 +391,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsInt()<br />
+                            @ApiProperty({name: &#x27;patientId&#x27;, type: Number, description: &#x27;Identificador del paciente que asistirá a la cita.&#x27;, example: 12})<br />@IsInt()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/appointment/dto/create-appointment.dto.ts:36</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/appointment/dto/create-appointment.dto.ts:85</a></div>
                         </td>
                     </tr>
 
@@ -398,6 +410,7 @@
                 <td class="col-md-4">
                     <a name="reason"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier">Optional</span>
@@ -417,13 +430,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@IsOptional()<br />
+                            @ApiPropertyOptional({name: &#x27;reason&#x27;, type: String, description: &#x27;Motivo de la cita médica. Este campo es opcional.&#x27;, example: &#x27;Chequeo general anual&#x27;})<br />@IsString()<br />@IsOptional()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/appointment/dto/create-appointment.dto.ts:15</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/appointment/dto/create-appointment.dto.ts:32</a></div>
                         </td>
                     </tr>
 
@@ -436,6 +449,7 @@
                 <td class="col-md-4">
                     <a name="status"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier">Optional</span>
@@ -455,13 +469,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@IsOptional()<br />
+                            @ApiPropertyOptional({name: &#x27;status&#x27;, type: String, description: &#x27;Estado actual de la cita médica. Puede ser &#x60;scheduled&#x60;, &#x60;completed&#x60; o &#x60;canceled&#x60;.&#x27;, example: &#x27;scheduled&#x27;})<br />@IsString()<br />@IsOptional()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/appointment/dto/create-appointment.dto.ts:28</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/appointment/dto/create-appointment.dto.ts:61</a></div>
                         </td>
                     </tr>
 
@@ -480,24 +494,49 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { IsDateString, IsInt, IsOptional, IsString } from &quot;class-validator&quot;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ApiProperty, ApiPropertyOptional } from &quot;@nestjs/swagger&quot;;
+import { IsDateString, IsInt, IsOptional, IsString } from &quot;class-validator&quot;;
 
 
 
 export class CreateAppointmentDto {
 
     //Date of the appointment
+
+    @ApiProperty({
+    name: &#x27;date&#x27;,
+    type: String,
+    description: &#x27;Fecha y hora programada para la cita médica (formato ISO 8601).&#x27;,
+    example: &#x27;2025-11-15T10:30:00.000Z&#x27;,
+    })
+
     @IsDateString()
     date: Date;
 
     //Reason of the appointment
     //If the appointment is not scheduled, the reason is optional
+
+    @ApiPropertyOptional({
+    name: &#x27;reason&#x27;,
+    type: String,
+    description: &#x27;Motivo de la cita médica. Este campo es opcional.&#x27;,
+    example: &#x27;Chequeo general anual&#x27;,
+    })
+
     @IsString()
     @IsOptional()
     reason?: string;
 
     //Notes of the appointment
     //If the appointment is not scheduled, the notes is optional
+
+    @ApiPropertyOptional({
+    name: &#x27;notes&#x27;,
+    type: String,
+    description: &#x27;Notas adicionales sobre la cita médica. Este campo es opcional.&#x27;,
+    example: &#x27;El paciente solicitó atención prioritaria por síntomas recientes.&#x27;,
+    })
+
     @IsString()
     @IsOptional()
     notes?: string;
@@ -505,19 +544,51 @@ export class CreateAppointmentDto {
     //Status of the appointment
     //If the appointment is not scheduled, the status is optional
     //Status: scheduled, completed, canceled
+
+    @ApiPropertyOptional({
+    name: &#x27;status&#x27;,
+    type: String,
+    description: &#x27;Estado actual de la cita médica. Puede ser &#x60;scheduled&#x60;, &#x60;completed&#x60; o &#x60;canceled&#x60;.&#x27;,
+    example: &#x27;scheduled&#x27;,
+    })
+
     @IsString()
     @IsOptional()
     status?: string;
 
     //Doctor id
+
+    @ApiProperty({
+    name: &#x27;doctorId&#x27;,
+    type: Number,
+    description: &#x27;Identificador del doctor asignado a la cita médica.&#x27;,
+    example: 3,
+    })
+
     @IsInt()
     doctorId: number;
 
     //Patient id
+
+    @ApiProperty({
+    name: &#x27;patientId&#x27;,
+    type: Number,
+    description: &#x27;Identificador del paciente que asistirá a la cita.&#x27;,
+    example: 12,
+    })
+
     @IsInt()
     patientId: number;
     
     //Office id
+
+    @ApiProperty({
+    name: &#x27;officeId&#x27;,
+    type: Number,
+    description: &#x27;Identificador de la oficina o consultorio donde se realizará la cita.&#x27;,
+    example: 5,
+    })
+
     @IsInt()
     officeId: number;
     

@@ -159,21 +159,38 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#create" >create</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#findAll" >findAll</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#findOne" >findOne</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#remove" >remove</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#update" >update</a>
                             </li>
@@ -201,6 +218,9 @@
                     <a name="create"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>create</b></span>
                         <a href="#create"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -217,14 +237,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Post()<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Crear un nuevo detalle de prescripción&#x27;, description: &#x27;Crea un nuevo registro en la tabla de detalles de prescripción, que relaciona una receta con un medicamento.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Detalle de prescripción creado exitosamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Los datos enviados no son válidos.&#x27;})<br />@Post()<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="27"
-                                    class="link-to-prism">src/prescription-detail/prescription-detail.controller.ts:27</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="31"
+                                    class="link-to-prism">src/prescription-detail/prescription-detail.controller.ts:31</a></div>
                         </td>
                     </tr>
 
@@ -241,7 +261,6 @@
                                             <td>Name</td>
                                                 <td>Type</td>
                                             <td>Optional</td>
-                                                <td>Description</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -256,10 +275,6 @@
                                             </td>
 
 
-                                            <td>
-                                                    <p>con la información del detalle.</p>
-
-                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -269,8 +284,7 @@
 
                         </div>
                             <div class="io-description">
-                                <p>El PrescriptionDetail recién creado</p>
-
+                                
                             </div>
                 </td>
             </tr>
@@ -282,6 +296,8 @@
                 <td class="col-md-4">
                     <a name="findAll"></a>
                     <span class="name">
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>findAll</b></span>
                         <a href="#findAll"><span class="icon ion-ios-link"></span></a>
@@ -299,31 +315,25 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Get()<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Obtener todos los detalles de prescripción&#x27;, description: &#x27;Devuelve una lista con todos los registros de detalles de prescripción almacenados.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Lista de detalles de prescripción obtenida correctamente.&#x27;})<br />@Get()<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="40"
-                                    class="link-to-prism">src/prescription-detail/prescription-detail.controller.ts:40</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="49"
+                                    class="link-to-prism">src/prescription-detail/prescription-detail.controller.ts:49</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                        <div class="io-description"><p>Obtiene una lista de todos los detalles de prescripción.</p>
-</div>
 
                         <div class="io-description">
                             <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                         </div>
-                            <div class="io-description">
-                                <p>Un array de PrescriptionDetail con las relaciones cargadas.</p>
-
-                            </div>
                 </td>
             </tr>
         </tbody>
@@ -334,6 +344,10 @@
                 <td class="col-md-4">
                     <a name="findOne"></a>
                     <span class="name">
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>findOne</b></span>
                         <a href="#findOne"><span class="icon ion-ios-link"></span></a>
@@ -351,22 +365,20 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Get(&#x27;:id&#x27;)<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Obtener un detalle de prescripción por ID&#x27;, description: &#x27;Busca y devuelve un detalle de prescripción utilizando su ID único.&#x27;})<br />@ApiParam({name: &#x27;id&#x27;, required: true, type: Number, description: &#x27;ID del detalle de prescripción que se desea consultar&#x27;, example: 1})<br />@ApiResponse({status: undefined, description: &#x27;Detalle de prescripción encontrado.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontró el detalle de prescripción con el ID especificado.&#x27;})<br />@Get(&#x27;:id&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="55"
-                                    class="link-to-prism">src/prescription-detail/prescription-detail.controller.ts:55</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="79"
+                                    class="link-to-prism">src/prescription-detail/prescription-detail.controller.ts:79</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                        <div class="io-description"><p>Actualiza un detalle de prescription existente.</p>
-</div>
 
                             <div class="io-description">
                                 <b>Parameters :</b>
@@ -377,7 +389,6 @@
                                             <td>Name</td>
                                                 <td>Type</td>
                                             <td>Optional</td>
-                                                <td>Description</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -392,10 +403,6 @@
                                             </td>
 
 
-                                            <td>
-                                                    <p>El ID del detalle de prescripción.</p>
-
-                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -405,8 +412,7 @@
 
                         </div>
                             <div class="io-description">
-                                <p>El PrescriptionDetail encontrado.</p>
-
+                                
                             </div>
                 </td>
             </tr>
@@ -418,6 +424,10 @@
                 <td class="col-md-4">
                     <a name="remove"></a>
                     <span class="name">
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>remove</b></span>
                         <a href="#remove"><span class="icon ion-ios-link"></span></a>
@@ -435,22 +445,20 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Delete(&#x27;:id&#x27;)<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Eliminar un detalle de prescripción&#x27;, description: &#x27;Elimina un detalle de prescripción existente utilizando su ID único.&#x27;})<br />@ApiParam({name: &#x27;id&#x27;, required: true, type: Number, description: &#x27;ID del detalle de prescripción que se desea eliminar&#x27;, example: 1})<br />@ApiResponse({status: undefined, description: &#x27;Detalle de prescripción eliminado correctamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontró el detalle de prescripción con el ID especificado.&#x27;})<br />@Delete(&#x27;:id&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="85"
-                                    class="link-to-prism">src/prescription-detail/prescription-detail.controller.ts:85</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="139"
+                                    class="link-to-prism">src/prescription-detail/prescription-detail.controller.ts:139</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                        <div class="io-description"><p>Elimina un detalle de prescripción por su ID.</p>
-</div>
 
                             <div class="io-description">
                                 <b>Parameters :</b>
@@ -461,7 +469,6 @@
                                             <td>Name</td>
                                                 <td>Type</td>
                                             <td>Optional</td>
-                                                <td>Description</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -476,10 +483,6 @@
                                             </td>
 
 
-                                            <td>
-                                                    <p>El ID del detalle a eliminar.</p>
-
-                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -489,8 +492,7 @@
 
                         </div>
                             <div class="io-description">
-                                <p>Resultado de la operacipon de eliminación.</p>
-
+                                
                             </div>
                 </td>
             </tr>
@@ -502,6 +504,10 @@
                 <td class="col-md-4">
                     <a name="update"></a>
                     <span class="name">
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>update</b></span>
                         <a href="#update"><span class="icon ion-ios-link"></span></a>
@@ -519,22 +525,20 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Patch(&#x27;:id&#x27;)<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Actualizar un detalle de prescripción&#x27;, description: &#x27;Actualiza los datos de un detalle de prescripción existente mediante su ID.&#x27;})<br />@ApiParam({name: &#x27;id&#x27;, required: true, type: Number, description: &#x27;ID del detalle de prescripción que se desea actualizar&#x27;, example: 1})<br />@ApiResponse({status: undefined, description: &#x27;Detalle de prescripción actualizado correctamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontró el detalle de prescripción con el ID especificado.&#x27;})<br />@Patch(&#x27;:id&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="71"
-                                    class="link-to-prism">src/prescription-detail/prescription-detail.controller.ts:71</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="109"
+                                    class="link-to-prism">src/prescription-detail/prescription-detail.controller.ts:109</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                        <div class="io-description"><p>Actualiza un detalle de prescription existente.</p>
-</div>
 
                             <div class="io-description">
                                 <b>Parameters :</b>
@@ -545,7 +549,6 @@
                                             <td>Name</td>
                                                 <td>Type</td>
                                             <td>Optional</td>
-                                                <td>Description</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -560,10 +563,6 @@
                                             </td>
 
 
-                                            <td>
-                                                    <p>El ID del detalle a actualizar.</p>
-
-                                            </td>
                                         </tr>
                                         <tr>
                                                 <td>updatePrescriptionDetailsDto</td>
@@ -576,10 +575,6 @@
                                             </td>
 
 
-                                            <td>
-                                                    <p>DTO con los campos a modificar.</p>
-
-                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -589,8 +584,7 @@
 
                         </div>
                             <div class="io-description">
-                                <p>El detalle de prescripción actualizado.</p>
-
+                                
                             </div>
                 </td>
             </tr>
@@ -600,89 +594,143 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">/**
- * Controlador para la gestión de detalles de prescripción.
- * Expone los endpoints CRED para la manipulación de la relación entre 
- * Prescripciones y Medicinas.
- */
-import { Body, Controller, Get, Inject, Patch, Post, Param, Delete } from &#x27;@nestjs/common&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Body, Controller, Get, Inject, Patch, Post, Param, Delete, HttpStatus } from &#x27;@nestjs/common&#x27;;
 import { CreatePrescriptionDetailDto } from &#x27;./dto/create-prescription-detail.dto&#x27;;
 import { PrescriptionDetailService } from &#x27;./prescription-detail.service&#x27;;
 import { UpdatePrescriptionDetailsDto } from &#x27;./dto/update-prescription-details.dto&#x27;;
+import { ApiOperation, ApiParam, ApiResponse } from &#x27;@nestjs/swagger&#x27;;
 
 
 @Controller(&#x27;prescription-detail&#x27;)
 export class PrescriptionDetailController {
     constructor(private readonly detailRepository: PrescriptionDetailService){}
 
-    /**
-     * 
-     * @param createPrescriptionDetailDto con la información del detalle.
-     * @returns El PrescriptionDetail recién creado
-     */
-
-    // ─── POST ────────
+    // ─── POST ───────────────────────────────────────────────
     //Create a new prescription detail
     //http:localhost:3000/prescription-detail
     // table relation between prescription and medicine, parameters id of prescription and medicine
+
+    @ApiOperation({
+    summary: &#x27;Crear un nuevo detalle de prescripción&#x27;,
+    description:&#x27;Crea un nuevo registro en la tabla de detalles de prescripción, que relaciona una receta con un medicamento.&#x27;,
+    })
+    @ApiResponse({
+    status: HttpStatus.CREATED,
+    description: &#x27;Detalle de prescripción creado exitosamente.&#x27;,
+    })
+    @ApiResponse({
+    status: HttpStatus.BAD_REQUEST,
+    description: &#x27;Los datos enviados no son válidos.&#x27;,
+    })
+
     @Post()
     create(@Body() createPrescriptionDetailDto: CreatePrescriptionDetailDto) {
         return this.detailRepository.create(createPrescriptionDetailDto);
     }
 
-    /**
-     * Obtiene una lista de todos los detalles de prescripción.
-     * @returns  Un array de PrescriptionDetail con las relaciones cargadas.
-     */
-
-    // ─── GET ─────────
+    // ─── GET ───────────────────────────────────────────────
     //Get all prescription details
     //http:localhost:3000/prescription-detail
+
+    @ApiOperation({
+    summary: &#x27;Obtener todos los detalles de prescripción&#x27;,
+    description: &#x27;Devuelve una lista con todos los registros de detalles de prescripción almacenados.&#x27;,
+    })
+    @ApiResponse({
+    status: HttpStatus.OK,
+    description: &#x27;Lista de detalles de prescripción obtenida correctamente.&#x27;,
+    })
+
     @Get()
     findAll() {
         return this.detailRepository.findAll();
     }
 
-    /**
-     * Actualiza un detalle de prescription existente.
-     * @param id El ID del detalle de prescripción.
-     * @returns El PrescriptionDetail encontrado.
-     */
-
-    // ─── GET ─────
+    // ─── GET ───────────────────────────────────────────────
     //Get prescription detail by id
     //http:localhost:3000/prescription-detail/1
     //The param id is the id of the prescription detail, is required
+
+    @ApiOperation({
+    summary: &#x27;Obtener un detalle de prescripción por ID&#x27;,
+    description: &#x27;Busca y devuelve un detalle de prescripción utilizando su ID único.&#x27;,
+    })
+    @ApiParam({
+    name: &#x27;id&#x27;,
+    required: true,
+    type: Number,
+    description: &#x27;ID del detalle de prescripción que se desea consultar&#x27;,
+    example: 1,
+    })
+    @ApiResponse({
+    status: HttpStatus.OK,
+    description: &#x27;Detalle de prescripción encontrado.&#x27;,
+    })
+    @ApiResponse({
+    status: HttpStatus.NOT_FOUND,
+    description: &#x27;No se encontró el detalle de prescripción con el ID especificado.&#x27;,
+    })
+
     @Get(&#x27;:id&#x27;)
     findOne(@Param(&#x27;id&#x27;) id: number) {
         return this.detailRepository.findOne(id);
     }
 
-    /**
-     * Actualiza un detalle de prescription existente.
-     * @param id El ID del detalle a actualizar.
-     * @param updatePrescriptionDetailsDto DTO con los campos a modificar.
-     * @returns El detalle de prescripción actualizado.
-     */
-
-    // ─── PATCH ──────
+    // ─── PATCH ───────────────────────────────────────────────
     // Update prescription detail by id
     // http:localhost:3000/prescription-detail/1
     // The param id is the id of the prescription detail, is required for update
+
+    @ApiOperation({
+    summary: &#x27;Actualizar un detalle de prescripción&#x27;,
+    description:&#x27;Actualiza los datos de un detalle de prescripción existente mediante su ID.&#x27;
+    })
+    @ApiParam({
+    name: &#x27;id&#x27;,
+    required: true,
+    type: Number,
+    description: &#x27;ID del detalle de prescripción que se desea actualizar&#x27;,
+    example: 1,
+    })
+    @ApiResponse({
+    status: HttpStatus.OK,
+    description: &#x27;Detalle de prescripción actualizado correctamente.&#x27;,
+    })
+    @ApiResponse({
+    status: HttpStatus.NOT_FOUND,
+    description: &#x27;No se encontró el detalle de prescripción con el ID especificado.&#x27;,
+    })
+
     @Patch(&#x27;:id&#x27;)
     update(@Param(&#x27;id&#x27;) id: number, @Body() updatePrescriptionDetailsDto: UpdatePrescriptionDetailsDto) {
         return this.detailRepository.update(id, updatePrescriptionDetailsDto);
     }
-    /**
-     * Elimina un detalle de prescripción por su ID.
-     * @param id El ID del detalle a eliminar.
-     * @returns Resultado de la operacipon de eliminación.
-     */
 
-    // ─── DELETE ──────
+    // ─── DELETE ───────────────────────────────────────────────
     // Delete prescription detail by id
     // http:localhost:3000/prescription-detail/1
     // The param id is the id of the prescription detail, is required for delete
+
+    @ApiOperation({
+    summary: &#x27;Eliminar un detalle de prescripción&#x27;,
+    description:&#x27;Elimina un detalle de prescripción existente utilizando su ID único.&#x27;
+    })
+    @ApiParam({
+    name: &#x27;id&#x27;,
+    required: true,
+    type: Number,
+    description: &#x27;ID del detalle de prescripción que se desea eliminar&#x27;,
+    example: 1,
+    })
+    @ApiResponse({
+    status: HttpStatus.OK,
+    description: &#x27;Detalle de prescripción eliminado correctamente.&#x27;,
+    })
+    @ApiResponse({
+    status: HttpStatus.NOT_FOUND,
+    description: &#x27;No se encontró el detalle de prescripción con el ID especificado.&#x27;,
+    })
+
     @Delete(&#x27;:id&#x27;)
     remove(@Param(&#x27;id&#x27;) id: number) {
         return this.detailRepository.remove(id);

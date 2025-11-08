@@ -166,18 +166,22 @@
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                     <span class="modifier">Optional</span>
                                 <a href="#estado_pago" >estado_pago</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#id_factura" >id_factura</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#metodo_pago" >metodo_pago</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#total" >total</a>
                             </li>
@@ -208,6 +212,7 @@
                     <span class="name">
                             <span class="modifier"></span>
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
                             <span class="modifier">Optional</span>
                         <span ><b>estado_pago</b></span>
                         <a href="#estado_pago"><span class="icon ion-ios-link"></span></a>
@@ -225,13 +230,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@IsOptional()<br />
+                            @ApiPropertyOptional({name: &#x27;estado_pago&#x27;, required: false, type: String, description: &#x27;Estado de pago actualizado. Puede ser &quot;pendiente&quot;, &quot;pagado&quot; o &quot;cancelado&quot;.&#x27;, example: &#x27;pagado&#x27;})<br />@IsString()<br />@IsOptional()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/invoice/dto/update-invoice.dto.ts:16</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/invoice/dto/update-invoice.dto.ts:41</a></div>
                         </td>
                     </tr>
 
@@ -244,6 +249,7 @@
                 <td class="col-md-4">
                     <a name="id_factura"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>id_factura</b></span>
                         <a href="#id_factura"><span class="icon ion-ios-link"></span></a>
@@ -261,13 +267,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsNumber()<br />
+                            @ApiProperty({name: &#x27;id_factura&#x27;, required: true, type: Number, description: &#x27;Identificador único de la factura que se actualiza.&#x27;, example: 10})<br />@IsNumber()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/invoice/dto/update-invoice.dto.ts:19</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/invoice/dto/update-invoice.dto.ts:52</a></div>
                         </td>
                     </tr>
 
@@ -280,6 +286,7 @@
                 <td class="col-md-4">
                     <a name="metodo_pago"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>metodo_pago</b></span>
                         <a href="#metodo_pago"><span class="icon ion-ios-link"></span></a>
@@ -297,13 +304,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />
+                            @ApiProperty({name: &#x27;metodo_pago&#x27;, required: true, type: String, description: &#x27;Nuevo método de pago utilizado.&#x27;, example: &#x27;transferencia&#x27;})<br />@IsString()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/invoice/dto/update-invoice.dto.ts:12</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/invoice/dto/update-invoice.dto.ts:29</a></div>
                         </td>
                     </tr>
 
@@ -316,6 +323,7 @@
                 <td class="col-md-4">
                     <a name="total"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>total</b></span>
                         <a href="#total"><span class="icon ion-ios-link"></span></a>
@@ -333,13 +341,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsNumber()<br />
+                            @ApiProperty({name: &#x27;total&#x27;, required: true, type: Number, description: &#x27;Monto total actualizado de la factura.&#x27;, example: 180000})<br />@IsNumber()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/invoice/dto/update-invoice.dto.ts:9</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/invoice/dto/update-invoice.dto.ts:18</a></div>
                         </td>
                     </tr>
 
@@ -361,19 +369,52 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { PartialType } from &#x27;@nestjs/mapped-types&#x27;;
 import { CreateInvoiceDto } from &#x27;./create-invoice.dto&#x27;;
 import { IsNumber, IsString, IsOptional } from &#x27;class-validator&#x27;;
+import { ApiProperty, ApiPropertyOptional } from &#x27;@nestjs/swagger&#x27;;
 
 // Update Invoice DTO
 export class UpdateInvoiceDto extends PartialType(CreateInvoiceDto) {
 
+    @ApiProperty({
+    name: &#x27;total&#x27;,
+    required: true,
+    type: Number,
+    description: &#x27;Monto total actualizado de la factura.&#x27;,
+    example: 180000,
+    })
+
     @IsNumber()
     total: number;
 
+    @ApiProperty({
+    name: &#x27;metodo_pago&#x27;,
+    required: true,
+    type: String,
+    description: &#x27;Nuevo método de pago utilizado.&#x27;,
+    example: &#x27;transferencia&#x27;,
+    })
+
     @IsString()
     metodo_pago: string;
+
+    @ApiPropertyOptional({
+    name: &#x27;estado_pago&#x27;,
+    required: false,
+    type: String,
+    description:&#x27;Estado de pago actualizado. Puede ser &quot;pendiente&quot;, &quot;pagado&quot; o &quot;cancelado&quot;.&#x27;,
+    example: &#x27;pagado&#x27;,
+    })
     
     @IsString()
     @IsOptional()
     estado_pago?: string;   
+
+    @ApiProperty({
+    name: &#x27;id_factura&#x27;,
+    required: true,
+    type: Number,
+    description: &#x27;Identificador único de la factura que se actualiza.&#x27;,
+    example: 10,
+    })
 
     @IsNumber()
     id_factura: number;

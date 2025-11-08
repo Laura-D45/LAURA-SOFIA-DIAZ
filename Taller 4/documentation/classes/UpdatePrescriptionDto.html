@@ -165,21 +165,26 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#appointmentId" >appointmentId</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#duration" >duration</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#id" >id</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#observations" >observations</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#quantity" >quantity</a>
                             </li>
@@ -209,6 +214,7 @@
                     <a name="appointmentId"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>appointmentId</b></span>
                         <a href="#appointmentId"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -225,13 +231,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsInt()<br />
+                            @ApiPropertyOptional({name: &#x27;appointmentId&#x27;, type: Number, description: &#x27;Nuevo ID de la cita médica asociada, si aplica.&#x27;, example: 14})<br />@IsInt()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/prescription/dto/update-prescription.dto.ts:20</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/prescription/dto/update-prescription.dto.ts:57</a></div>
                         </td>
                     </tr>
 
@@ -244,6 +250,7 @@
                 <td class="col-md-4">
                     <a name="duration"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>duration</b></span>
                         <a href="#duration"><span class="icon ion-ios-link"></span></a>
@@ -261,13 +268,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsInt()<br />
+                            @ApiPropertyOptional({name: &#x27;duration&#x27;, type: Number, description: &#x27;Duración actualizada del tratamiento en días.&#x27;, example: 10})<br />@IsInt()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/prescription/dto/update-prescription.dto.ts:17</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/prescription/dto/update-prescription.dto.ts:47</a></div>
                         </td>
                     </tr>
 
@@ -280,6 +287,7 @@
                 <td class="col-md-4">
                     <a name="id"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>id</b></span>
                         <a href="#id"><span class="icon ion-ios-link"></span></a>
@@ -297,13 +305,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsInt()<br />
+                            @ApiPropertyOptional({name: &#x27;id&#x27;, type: Number, description: &#x27;Identificador único de la prescripción a actualizar.&#x27;, example: 1})<br />@IsInt()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/prescription/dto/update-prescription.dto.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/prescription/dto/update-prescription.dto.ts:16</a></div>
                         </td>
                     </tr>
 
@@ -316,6 +324,7 @@
                 <td class="col-md-4">
                     <a name="observations"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>observations</b></span>
                         <a href="#observations"><span class="icon ion-ios-link"></span></a>
@@ -333,13 +342,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />
+                            @ApiPropertyOptional({name: &#x27;observations&#x27;, type: String, description: &#x27;Nuevas observaciones o instrucciones médicas.&#x27;, example: &#x27;Aumentar la dosis a 2 tabletas diarias.&#x27;})<br />@IsString()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/prescription/dto/update-prescription.dto.ts:11</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/prescription/dto/update-prescription.dto.ts:27</a></div>
                         </td>
                     </tr>
 
@@ -352,6 +361,7 @@
                 <td class="col-md-4">
                     <a name="quantity"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>quantity</b></span>
                         <a href="#quantity"><span class="icon ion-ios-link"></span></a>
@@ -369,13 +379,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsInt()<br />
+                            @ApiPropertyOptional({name: &#x27;quantity&#x27;, type: Number, description: &#x27;Cantidad actualizada del medicamento.&#x27;, example: 5})<br />@IsInt()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/prescription/dto/update-prescription.dto.ts:14</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/prescription/dto/update-prescription.dto.ts:37</a></div>
                         </td>
                     </tr>
 
@@ -397,21 +407,58 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { PartialType } from &#x27;@nestjs/mapped-types&#x27;;
 import { CreatePrescriptionDto } from &#x27;./create-prescription.dto&#x27;;
 import  { IsInt, IsString } from &quot;class-validator&quot;;
+import { ApiPropertyOptional } from &#x27;@nestjs/swagger&#x27;;
 
 // Update Prescription DTO
 export class UpdatePrescriptionDto extends PartialType(CreatePrescriptionDto) {
+
+    @ApiPropertyOptional({
+    name: &#x27;id&#x27;,
+    type: Number,
+    description: &#x27;Identificador único de la prescripción a actualizar.&#x27;,
+    example: 1,
+    })
     @IsInt()
     id: number;
+
+    
+    @ApiPropertyOptional({
+    name: &#x27;observations&#x27;,
+    type: String,
+    description: &#x27;Nuevas observaciones o instrucciones médicas.&#x27;,
+    example: &#x27;Aumentar la dosis a 2 tabletas diarias.&#x27;,
+    })
     
     @IsString()
     observations: string;
 
+
+    @ApiPropertyOptional({
+    name: &#x27;quantity&#x27;,
+    type: Number,
+    description: &#x27;Cantidad actualizada del medicamento.&#x27;,
+    example: 5,
+    })
     @IsInt()
     quantity: number;
 
+
+    @ApiPropertyOptional({
+    name: &#x27;duration&#x27;,
+    type: Number,
+    description: &#x27;Duración actualizada del tratamiento en días.&#x27;,
+    example: 10,
+    })
     @IsInt()
     duration: number;
 
+
+    @ApiPropertyOptional({
+    name: &#x27;appointmentId&#x27;,
+    type: Number,
+    description: &#x27;Nuevo ID de la cita médica asociada, si aplica.&#x27;,
+    example: 14,
+    })
     @IsInt()
     appointmentId: number;
 

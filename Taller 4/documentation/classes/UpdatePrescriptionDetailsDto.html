@@ -166,14 +166,17 @@
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#dose" >dose</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#duration" >duration</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#instrucitons" >instrucitons</a>
@@ -205,6 +208,7 @@
                     <span class="name">
                             <span class="modifier"></span>
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>dose</b></span>
                         <a href="#dose"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -221,13 +225,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@IsNotEmpty()<br />
+                            @ApiProperty({name: &#x27;dose&#x27;, required: false, type: String, description: &#x27;Nueva dosis del medicamento (si se desea actualizar).&#x27;, example: &#x27;2 tabletas cada 12 horas&#x27;})<br />@IsString()<br />@IsNotEmpty()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/prescription-detail/dto/update-prescription-details.dto.ts:12</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/prescription-detail/dto/update-prescription-details.dto.ts:20</a></div>
                         </td>
                     </tr>
 
@@ -240,6 +244,7 @@
                 <td class="col-md-4">
                     <a name="duration"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>duration</b></span>
@@ -258,13 +263,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsInt()<br />@IsNotEmpty()<br />
+                            @ApiProperty({name: &#x27;duration&#x27;, required: false, type: Number, description: &#x27;Nueva duración del tratamiento en días.&#x27;, example: 10})<br />@IsInt()<br />@IsNotEmpty()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/prescription-detail/dto/update-prescription-details.dto.ts:16</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/prescription-detail/dto/update-prescription-details.dto.ts:32</a></div>
                         </td>
                     </tr>
 
@@ -277,6 +282,7 @@
                 <td class="col-md-4">
                     <a name="instrucitons"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>instrucitons</b></span>
@@ -295,13 +301,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@IsNotEmpty()<br />
+                            @ApiProperty({name: &#x27;instructions&#x27;, required: false, type: String, description: &#x27;Nuevas instrucciones o recomendaciones.&#x27;, example: &#x27;Tomar con abundante agua&#x27;})<br />@IsString()<br />@IsNotEmpty()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/prescription-detail/dto/update-prescription-details.dto.ts:20</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/prescription-detail/dto/update-prescription-details.dto.ts:44</a></div>
                         </td>
                     </tr>
 
@@ -323,20 +329,44 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { PartialType } from &quot;@nestjs/mapped-types&quot;;
 import { CreatePrescriptionDetailDto } from &quot;./create-prescription-detail.dto&quot;;
 import { IsInt, IsNotEmpty, IsString } from &quot;class-validator&quot;;
+import { ApiProperty } from &quot;@nestjs/swagger&quot;;
 
 
 // Update Prescription Detail DTO
 export class UpdatePrescriptionDetailsDto extends PartialType(CreatePrescriptionDetailDto) {
 
 
+    @ApiProperty({
+    name: &#x27;dose&#x27;,
+    required: false,
+    type: String,
+    description: &#x27;Nueva dosis del medicamento (si se desea actualizar).&#x27;,
+    example: &#x27;2 tabletas cada 12 horas&#x27;,
+    })
     @IsString()
     @IsNotEmpty()
     dose: string;
 
+
+    @ApiProperty({
+    name: &#x27;duration&#x27;,
+    required: false,
+    type: Number,
+    description: &#x27;Nueva duración del tratamiento en días.&#x27;,
+    example: 10,
+    })
     @IsInt()
     @IsNotEmpty()
     duration: number;
 
+
+    @ApiProperty({
+    name: &#x27;instructions&#x27;,
+    required: false,
+    type: String,
+    description: &#x27;Nuevas instrucciones o recomendaciones.&#x27;,
+    example: &#x27;Tomar con abundante agua&#x27;,
+    })
     @IsString()
     @IsNotEmpty()
     instrucitons: string;       

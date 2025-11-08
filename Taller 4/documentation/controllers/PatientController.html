@@ -159,21 +159,35 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#create" >create</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#findAll" >findAll</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#findOne" >findOne</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#remove" >remove</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#update" >update</a>
                             </li>
@@ -201,6 +215,9 @@
                     <a name="create"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>create</b></span>
                         <a href="#create"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -217,14 +234,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Post()<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Crear un nuevo paciente&#x27;, description: &#x27;Registra un nuevo paciente en el sistema hospitalario con su historial médico, tipo de sangre y aseguradora.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Paciente creado exitosamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Datos inválidos. Verifique la información enviada.&#x27;})<br />@Post()<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="16"
-                                    class="link-to-prism">src/patient/patient.controller.ts:16</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="31"
+                                    class="link-to-prism">src/patient/patient.controller.ts:31</a></div>
                         </td>
                     </tr>
 
@@ -277,6 +294,8 @@
                     <a name="findAll"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>findAll</b></span>
                         <a href="#findAll"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -293,14 +312,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Get()<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Obtener todos los pacientes&#x27;, description: &#x27;Devuelve una lista completa de todos los pacientes registrados en el sistema.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Lista de pacientes obtenida correctamente.&#x27;})<br />@Get()<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="24"
-                                    class="link-to-prism">src/patient/patient.controller.ts:24</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="49"
+                                    class="link-to-prism">src/patient/patient.controller.ts:49</a></div>
                         </td>
                     </tr>
 
@@ -323,6 +342,9 @@
                     <a name="findOne"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>findOne</b></span>
                         <a href="#findOne"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -339,14 +361,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Get(&#x27;:id&#x27;)<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Obtener un paciente por su ID&#x27;, description: &#x27;Permite obtener la información detallada de un paciente específico mediante su identificador único.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Paciente encontrado exitosamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontró un paciente con el ID especificado.&#x27;})<br />@Get(&#x27;:id&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="33"
-                                    class="link-to-prism">src/patient/patient.controller.ts:33</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="70"
+                                    class="link-to-prism">src/patient/patient.controller.ts:70</a></div>
                         </td>
                     </tr>
 
@@ -399,6 +421,9 @@
                     <a name="remove"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>remove</b></span>
                         <a href="#remove"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -415,14 +440,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Delete(&#x27;:id&#x27;)<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Eliminar un paciente&#x27;, description: &#x27;Elimina definitivamente del sistema al paciente con el ID proporcionado.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Paciente eliminado exitosamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontró el paciente para eliminar.&#x27;})<br />@Delete(&#x27;:id&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="51"
-                                    class="link-to-prism">src/patient/patient.controller.ts:51</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="115"
+                                    class="link-to-prism">src/patient/patient.controller.ts:115</a></div>
                         </td>
                     </tr>
 
@@ -475,6 +500,9 @@
                     <a name="update"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>update</b></span>
                         <a href="#update"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -491,14 +519,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Patch(&#x27;:id&#x27;)<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Actualizar información de un paciente&#x27;, description: &#x27;Permite modificar los datos de un paciente existente, como su tipo de sangre, historial médico o aseguradora.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Paciente actualizado correctamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontró el paciente para actualizar.&#x27;})<br />@Patch(&#x27;:id&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="42"
-                                    class="link-to-prism">src/patient/patient.controller.ts:42</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="93"
+                                    class="link-to-prism">src/patient/patient.controller.ts:93</a></div>
                         </td>
                     </tr>
 
@@ -560,11 +588,12 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Controller, Post, Body, Get, Param, Patch, Delete } from &#x27;@nestjs/common&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Controller, Post, Body, Get, Param, Patch, Delete, HttpStatus } from &#x27;@nestjs/common&#x27;;
 import { Patient } from &#x27;./patient.entity&#x27;;
 import { CreatePatientDto } from &#x27;./dto/create-patient.dto&#x27;;
 import { PatientService } from &#x27;./patient.service&#x27;;
 import { UpdatePatientDto } from &#x27;./dto/update-patient.dto&#x27;;
+import { ApiOperation, ApiResponse } from &#x27;@nestjs/swagger&#x27;;
 
 @Controller(&#x27;patient&#x27;)
 export class PatientController {
@@ -574,6 +603,20 @@ export class PatientController {
   //Create a new patient
   //http:localhost:3000/patient
   //The JSON Body must be in the format of the CreatePatientDto
+
+  @ApiOperation({ 
+    summary: &#x27;Crear un nuevo paciente&#x27;, 
+    description: &#x27;Registra un nuevo paciente en el sistema hospitalario con su historial médico, tipo de sangre y aseguradora.&#x27; 
+  })
+  @ApiResponse({ 
+    status: HttpStatus.CREATED, 
+    description: &#x27;Paciente creado exitosamente.&#x27;, 
+  })
+  @ApiResponse({ 
+    status: HttpStatus.BAD_REQUEST, 
+    description: &#x27;Datos inválidos. Verifique la información enviada.&#x27; 
+  })
+
   @Post()
   create(@Body() patientDto: CreatePatientDto) {
     return this.patientService.createPatient(patientDto);
@@ -582,6 +625,16 @@ export class PatientController {
   // ─── GET ───────────────────────────────────────────────
   //Get all patients
   //http:localhost:3000/patient
+
+  @ApiOperation({ 
+    summary: &#x27;Obtener todos los pacientes&#x27;, 
+    description: &#x27;Devuelve una lista completa de todos los pacientes registrados en el sistema.&#x27; 
+  })
+  @ApiResponse({ 
+    status: HttpStatus.OK, 
+    description: &#x27;Lista de pacientes obtenida correctamente.&#x27;, 
+  })
+
   @Get()
   findAll() {
     return this.patientService.findAll();
@@ -591,6 +644,18 @@ export class PatientController {
   //Get patient by id
   //http:localhost:3000/patient/1
   //The param id is the id of the patient, is required
+
+  @ApiOperation({ 
+    summary: &#x27;Obtener un paciente por su ID&#x27;, 
+    description: &#x27;Permite obtener la información detallada de un paciente específico mediante su identificador único.&#x27; 
+  })
+  @ApiResponse({ 
+    status: HttpStatus.OK, 
+    description: &#x27;Paciente encontrado exitosamente.&#x27;, 
+  })
+  @ApiResponse({ status: HttpStatus.NOT_FOUND, description: &#x27;No se encontró un paciente con el ID especificado.&#x27; 
+  })
+
   @Get(&#x27;:id&#x27;)
   findOne(@Param(&#x27;id&#x27;) id: number) {
     return this.patientService.findOne(+id);
@@ -600,6 +665,20 @@ export class PatientController {
   //Update an patient
   //http:localhost:3000/patient/1
   //The param id is the id of the patient, is required for update
+
+  @ApiOperation({ 
+    summary: &#x27;Actualizar información de un paciente&#x27;, 
+    description: &#x27;Permite modificar los datos de un paciente existente, como su tipo de sangre, historial médico o aseguradora.&#x27; 
+  })
+  @ApiResponse({ 
+    status: HttpStatus.OK, 
+    description: &#x27;Paciente actualizado correctamente.&#x27;, 
+  })
+  @ApiResponse({ 
+    status: HttpStatus.NOT_FOUND, 
+    description: &#x27;No se encontró el paciente para actualizar.&#x27; 
+  })
+
   @Patch(&#x27;:id&#x27;)
   update(@Param(&#x27;id&#x27;) id: number, @Body() patientDto: UpdatePatientDto) {
     return this.patientService.update(+id, patientDto);
@@ -609,6 +688,19 @@ export class PatientController {
   // Delete a patient
   // http:localhost:3000/patient/1
   // The param id is the id of the patient, is required for delete
+
+  @ApiOperation({ 
+    summary: &#x27;Eliminar un paciente&#x27;, 
+    description: &#x27;Elimina definitivamente del sistema al paciente con el ID proporcionado.&#x27; 
+  })
+  @ApiResponse({ 
+    status: HttpStatus.OK, 
+    description: &#x27;Paciente eliminado exitosamente.&#x27; })
+  @ApiResponse({ 
+    status: HttpStatus.NOT_FOUND, 
+    description: &#x27;No se encontró el paciente para eliminar.&#x27; 
+  })
+
   @Delete(&#x27;:id&#x27;)
   remove(@Param(&#x27;id&#x27;) id: number) {
     return this.patientService.remove(+id);

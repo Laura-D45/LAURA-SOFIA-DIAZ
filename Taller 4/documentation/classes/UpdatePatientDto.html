@@ -161,10 +161,12 @@
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                     <span class="modifier">Optional</span>
                                 <a href="#bloodType" >bloodType</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier">Optional</span>
@@ -173,9 +175,11 @@
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#medicalHistory" >medicalHistory</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#personid" >personid</a>
@@ -208,6 +212,7 @@
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
                             <span class="modifier">Optional</span>
                         <span ><b>bloodType</b></span>
                         <a href="#bloodType"><span class="icon ion-ios-link"></span></a>
@@ -225,13 +230,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@IsNotEmpty()<br />@Length(2, 10)<br />
+                            @ApiProperty({name: &#x27;bloodType&#x27;, required: true, type: String, description: &#x27;Tipo de sangre actualizado del paciente.&#x27;, example: &#x27;A+&#x27;})<br />@IsString()<br />@IsNotEmpty()<br />@Length(2, 10)<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/patient/dto/update-patient.dto.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/patient/dto/update-patient.dto.ts:29</a></div>
                         </td>
                     </tr>
 
@@ -244,6 +249,7 @@
                 <td class="col-md-4">
                     <a name="insurance"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier">Optional</span>
@@ -263,13 +269,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@IsNotEmpty()<br />
+                            @ApiProperty({name: &#x27;insurance&#x27;, required: true, type: String, description: &#x27;Nueva aseguradora o actualización de la existente.&#x27;, example: &#x27;Nueva EPS&#x27;})<br />@IsString()<br />@IsNotEmpty()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/patient/dto/update-patient.dto.ts:17</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/patient/dto/update-patient.dto.ts:41</a></div>
                         </td>
                     </tr>
 
@@ -282,6 +288,7 @@
                 <td class="col-md-4">
                     <a name="medicalHistory"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>medicalHistory</b></span>
@@ -300,13 +307,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@IsNotEmpty()<br />
+                            @ApiProperty({name: &#x27;medicalHistory&#x27;, required: true, type: String, description: &#x27;Actualización del historial médico del paciente.&#x27;, example: &#x27;Se agregó diagnóstico de hipertensión.&#x27;})<br />@IsString()<br />@IsNotEmpty()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/patient/dto/update-patient.dto.ts:21</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/patient/dto/update-patient.dto.ts:53</a></div>
                         </td>
                     </tr>
 
@@ -319,6 +326,7 @@
                 <td class="col-md-4">
                     <a name="personid"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>personid</b></span>
@@ -337,13 +345,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsInt()<br />@IsNotEmpty()<br />
+                            @ApiProperty({name: &#x27;personId&#x27;, required: true, type: Number, description: &#x27;Identificador de la persona asociada al paciente.&#x27;, example: 12})<br />@IsInt()<br />@IsNotEmpty()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/patient/dto/update-patient.dto.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/patient/dto/update-patient.dto.ts:16</a></div>
                         </td>
                     </tr>
 
@@ -362,24 +370,56 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { IsInt, IsString, IsNotEmpty, Length } from &quot;class-validator&quot;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ApiProperty } from &quot;@nestjs/swagger&quot;;
+import { IsInt, IsString, IsNotEmpty, Length } from &quot;class-validator&quot;;
 
 // Update Patient DTO
 export class UpdatePatientDto {
 
+    @ApiProperty({
+    name: &#x27;personId&#x27;,
+    required: true,
+    type: Number,
+    description: &#x27;Identificador de la persona asociada al paciente.&#x27;,
+    example: 12,
+    })
     @IsInt()
     @IsNotEmpty()
     personid: number;
 
+
+    @ApiProperty({
+    name: &#x27;bloodType&#x27;,
+    required: true,
+    type: String,
+    description: &#x27;Tipo de sangre actualizado del paciente.&#x27;,
+    example: &#x27;A+&#x27;,
+    })
     @IsString()
     @IsNotEmpty()
     @Length(2, 10)
     bloodType?: string;
 
+
+    @ApiProperty({
+    name: &#x27;insurance&#x27;,
+    required: true,
+    type: String,
+    description: &#x27;Nueva aseguradora o actualización de la existente.&#x27;,
+    example: &#x27;Nueva EPS&#x27;,
+    })
     @IsString()
     @IsNotEmpty()
     insurance?: string;
 
+
+    @ApiProperty({
+    name: &#x27;medicalHistory&#x27;,
+    required: true,
+    type: String,
+    description: &#x27;Actualización del historial médico del paciente.&#x27;,
+    example: &#x27;Se agregó diagnóstico de hipertensión.&#x27;,
+    })
     @IsString()
     @IsNotEmpty()
     medicalHistory: string;

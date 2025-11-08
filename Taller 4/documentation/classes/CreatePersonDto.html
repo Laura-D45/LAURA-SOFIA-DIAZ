@@ -160,17 +160,21 @@
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#birthDate" >birthDate</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#document" >document</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#email" >email</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#gender" >gender</a>
@@ -178,9 +182,11 @@
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#lastname" >lastname</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#name" >name</a>
@@ -188,14 +194,17 @@
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#password" >password</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#phone" >phone</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#role" >role</a>
                             </li>
@@ -226,6 +235,7 @@
                     <span class="name">
                             <span class="modifier"></span>
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>birthDate</b></span>
                         <a href="#birthDate"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -242,13 +252,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @Type(undefined)<br />@IsDateString()<br />
+                            @ApiProperty({name: &#x27;birthDate&#x27;, required: true, type: String, description: &#x27;Fecha de nacimiento de la persona en formato ISO.&#x27;, example: &#x27;1990-07-14&#x27;})<br />@Type(undefined)<br />@IsDateString()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/person/dto/create-person.dto.ts:20</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/person/dto/create-person.dto.ts:52</a></div>
                         </td>
                     </tr>
 
@@ -261,6 +271,7 @@
                 <td class="col-md-4">
                     <a name="document"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>document</b></span>
                         <a href="#document"><span class="icon ion-ios-link"></span></a>
@@ -278,13 +289,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />
+                            @ApiProperty({name: &#x27;document&#x27;, required: true, type: String, description: &#x27;Número de documento de identidad de la persona.&#x27;, example: &#x27;1025487963&#x27;})<br />@IsString()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/person/dto/create-person.dto.ts:16</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/person/dto/create-person.dto.ts:40</a></div>
                         </td>
                     </tr>
 
@@ -297,6 +308,7 @@
                 <td class="col-md-4">
                     <a name="email"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>email</b></span>
                         <a href="#email"><span class="icon ion-ios-link"></span></a>
@@ -314,13 +326,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsEmail()<br />
+                            @ApiProperty({name: &#x27;email&#x27;, required: true, type: String, description: &#x27;Correo electrónico de la persona.&#x27;, example: &#x27;sofia.ramirez@example.com&#x27;})<br />@IsEmail()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/person/dto/create-person.dto.ts:27</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/person/dto/create-person.dto.ts:74</a></div>
                         </td>
                     </tr>
 
@@ -333,6 +345,7 @@
                 <td class="col-md-4">
                     <a name="gender"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>gender</b></span>
@@ -351,13 +364,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@IsOptional()<br />
+                            @ApiPropertyOptional({name: &#x27;gender&#x27;, required: false, type: String, description: &#x27;Género de la persona.&#x27;, example: &#x27;Femenino&#x27;})<br />@IsString()<br />@IsOptional()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/person/dto/create-person.dto.ts:41</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="112" class="link-to-prism">src/person/dto/create-person.dto.ts:112</a></div>
                         </td>
                     </tr>
 
@@ -370,6 +383,7 @@
                 <td class="col-md-4">
                     <a name="lastname"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>lastname</b></span>
@@ -388,13 +402,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@Length(2, 100)<br />
+                            @ApiProperty({name: &#x27;lastname&#x27;, required: true, type: String, description: &#x27;Apellido de la persona.&#x27;, example: &#x27;Ramírez&#x27;})<br />@IsString()<br />@Length(2, 100)<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/person/dto/create-person.dto.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/person/dto/create-person.dto.ts:29</a></div>
                         </td>
                     </tr>
 
@@ -407,6 +421,7 @@
                 <td class="col-md-4">
                     <a name="name"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>name</b></span>
@@ -425,13 +440,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@Length(2, 100)<br />
+                            @ApiProperty({name: &#x27;name&#x27;, required: true, type: String, description: &#x27;Nombre de la persona.&#x27;, example: &#x27;Sofía&#x27;})<br />@IsString()<br />@Length(2, 100)<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/person/dto/create-person.dto.ts:9</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/person/dto/create-person.dto.ts:17</a></div>
                         </td>
                     </tr>
 
@@ -444,6 +459,7 @@
                 <td class="col-md-4">
                     <a name="password"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>password</b></span>
@@ -462,13 +478,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString({message: &#x27;La contraseña debe tener caracteres validos&#x27;})<br />@Length(8, 50, {message: &#x27;La contraseña debe tener entre 8 y 50 caracteres&#x27;})<br />
+                            @ApiProperty({name: &#x27;password&#x27;, required: true, type: String, description: &#x27;Contraseña de acceso al sistema. Debe tener entre 8 y 50 caracteres.&#x27;, example: &#x27;Segura123!&#x27;})<br />@IsString({message: &#x27;La contraseña debe tener caracteres validos&#x27;})<br />@Length(8, 50, {message: &#x27;La contraseña debe tener entre 8 y 50 caracteres&#x27;})<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/person/dto/create-person.dto.ts:34</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/person/dto/create-person.dto.ts:89</a></div>
                         </td>
                     </tr>
 
@@ -481,6 +497,7 @@
                 <td class="col-md-4">
                     <a name="phone"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>phone</b></span>
@@ -499,13 +516,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@Length(2, 100)<br />
+                            @ApiProperty({name: &#x27;phone&#x27;, required: true, type: String, description: &#x27;Número de teléfono de contacto de la persona.&#x27;, example: &#x27;+57 315 482 9375&#x27;})<br />@IsString()<br />@Length(2, 100)<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/person/dto/create-person.dto.ts:24</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/person/dto/create-person.dto.ts:63</a></div>
                         </td>
                     </tr>
 
@@ -518,6 +535,7 @@
                 <td class="col-md-4">
                     <a name="role"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>role</b></span>
                         <a href="#role"><span class="icon ion-ios-link"></span></a>
@@ -535,13 +553,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsEnum(Role, {message: &#x27;El rol debe ser existente&#x27;})<br />
+                            @ApiProperty({name: &#x27;role&#x27;, required: true, enum: Role, description: &#x27;Rol de la persona dentro del sistema (Paciente, Doctor, Administrador, etc).&#x27;, example: undefined})<br />@IsEnum(Role, {message: &#x27;El rol debe ser existente&#x27;})<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/person/dto/create-person.dto.ts:37</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/person/dto/create-person.dto.ts:100</a></div>
                         </td>
                     </tr>
 
@@ -563,41 +581,112 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { IsDateString, IsEmail, IsEnum, IsOptional, IsString, Length } from &quot;class-validator&quot;;
 import { Role } from &quot;../person.entity&quot;;
 import { Type } from &quot;class-transformer&quot;;
+import { ApiProperty, ApiPropertyOptional } from &quot;@nestjs/swagger&quot;;
 
 export class CreatePersonDto {
 
+    @ApiProperty({
+    name: &#x27;name&#x27;,
+    required: true,
+    type: String,
+    description: &#x27;Nombre de la persona.&#x27;,
+    example: &#x27;Sofía&#x27;,
+    })
     @IsString()
     @Length(2, 100)
     name: string;
 
+
+    @ApiProperty({
+    name: &#x27;lastname&#x27;,
+    required: true,
+    type: String,
+    description: &#x27;Apellido de la persona.&#x27;,
+    example: &#x27;Ramírez&#x27;,
+    })
     @IsString()
     @Length(2, 100)
     lastname: string;
 
+
+    @ApiProperty({
+    name: &#x27;document&#x27;,
+    required: true,
+    type: String,
+    description: &#x27;Número de documento de identidad de la persona.&#x27;,
+    example: &#x27;1025487963&#x27;,
+    })
     @IsString()
     document: string;
 
+
+    @ApiProperty({
+    name: &#x27;birthDate&#x27;,
+    required: true,
+    type: String,
+    description: &#x27;Fecha de nacimiento de la persona en formato ISO.&#x27;,
+    example: &#x27;1990-07-14&#x27;,
+    })
     @Type(() &#x3D;&gt; Date)
     @IsDateString()
     birthDate: Date;
 
+    @ApiProperty({
+    name: &#x27;phone&#x27;,
+    required: true,
+    type: String,
+    description: &#x27;Número de teléfono de contacto de la persona.&#x27;,
+    example: &#x27;+57 315 482 9375&#x27;,
+    })
     @IsString()
     @Length(2, 100)
     phone: string;
 
+
+    @ApiProperty({
+    name: &#x27;email&#x27;,
+    required: true,
+    type: String,
+    description: &#x27;Correo electrónico de la persona.&#x27;,
+    example: &#x27;sofia.ramirez@example.com&#x27;,
+    })
     @IsEmail()
     email: string;
 
+
     // validaciones contraseña 
+    @ApiProperty({
+    name: &#x27;password&#x27;,
+    required: true,
+    type: String,
+    description: &#x27;Contraseña de acceso al sistema. Debe tener entre 8 y 50 caracteres.&#x27;,
+    example: &#x27;Segura123!&#x27;,
+    })
     @IsString({ message: &#x27;La contraseña debe tener caracteres validos&#x27; })
     @Length(8, 50, {
         message: &#x27;La contraseña debe tener entre 8 y 50 caracteres&#x27;
     })
     password: string;
 
+
+    @ApiProperty({
+    name: &#x27;role&#x27;,
+    required: true,
+    enum: Role,
+    description: &#x27;Rol de la persona dentro del sistema (Paciente, Doctor, Administrador, etc).&#x27;,
+    example: Role.Doctor,
+    })
     @IsEnum(Role, { message: &#x27;El rol debe ser existente&#x27; })
     role: Role;
 
+
+    @ApiPropertyOptional({
+    name: &#x27;gender&#x27;,
+    required: false,
+    type: String,
+    description: &#x27;Género de la persona.&#x27;,
+    example: &#x27;Femenino&#x27;,
+    })
     @IsString()
     @IsOptional()
     gender: string;

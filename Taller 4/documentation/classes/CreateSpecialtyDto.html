@@ -161,9 +161,11 @@
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#descripcion" >descripcion</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#name" >name</a>
@@ -196,6 +198,7 @@
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>descripcion</b></span>
                         <a href="#descripcion"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -212,13 +215,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@Length(2, 100)<br />@IsOptional()<br />
+                            @ApiPropertyOptional({name: &#x27;descripcion&#x27;, required: false, type: String, description: &#x27;Descripción breve de la especialidad médica. Campo opcional.&#x27;, example: &#x27;Especialidad médica que se encarga del estudio, diagnóstico y tratamiento del corazón.&#x27;})<br />@IsString()<br />@Length(2, 100)<br />@IsOptional()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/specialty/dto/create-specialty.dto.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/specialty/dto/create-specialty.dto.ts:29</a></div>
                         </td>
                     </tr>
 
@@ -231,6 +234,7 @@
                 <td class="col-md-4">
                     <a name="name"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>name</b></span>
@@ -249,13 +253,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@Length(2, 100)<br />
+                            @ApiProperty({name: &#x27;name&#x27;, required: true, type: String, description: &#x27;Nombre de la especialidad médica. Debe contener entre 2 y 100 caracteres.&#x27;, example: &#x27;Cardiología&#x27;})<br />@IsString()<br />@Length(2, 100)<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/specialty/dto/create-specialty.dto.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/specialty/dto/create-specialty.dto.ts:16</a></div>
                         </td>
                     </tr>
 
@@ -274,15 +278,31 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { IsOptional, IsString, Length } from &quot;class-validator&quot;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ApiProperty, ApiPropertyOptional } from &quot;@nestjs/swagger&quot;;
+import { IsOptional, IsString, Length } from &quot;class-validator&quot;;
 
 // Create Specialty DTO
 export class CreateSpecialtyDto{
     
+    @ApiProperty({
+    name: &#x27;name&#x27;,
+    required: true,
+    type: String,
+    description: &#x27;Nombre de la especialidad médica. Debe contener entre 2 y 100 caracteres.&#x27;,
+    example: &#x27;Cardiología&#x27;
+    })
     @IsString()
     @Length(2, 100)
     name: string;
 
+
+    @ApiPropertyOptional({
+    name: &#x27;descripcion&#x27;,
+    required: false,
+    type: String,
+    description: &#x27;Descripción breve de la especialidad médica. Campo opcional.&#x27;,
+    example: &#x27;Especialidad médica que se encarga del estudio, diagnóstico y tratamiento del corazón.&#x27;,
+    })
     @IsString()
     @Length(2, 100)
     @IsOptional()

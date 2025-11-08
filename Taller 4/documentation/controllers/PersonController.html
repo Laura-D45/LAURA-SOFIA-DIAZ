@@ -159,25 +159,42 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#create" >create</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#findAll" >findAll</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#findByRole" >findByRole</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#findOne" >findOne</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#remove" >remove</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#update" >update</a>
                             </li>
@@ -205,6 +222,9 @@
                     <a name="create"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>create</b></span>
                         <a href="#create"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -221,14 +241,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Post()<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Crear una nueva persona&#x27;, description: &#x27;Registra una nueva persona en el sistema hospitalario, incluyendo su información básica, rol y credenciales de acceso.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Persona creada exitosamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Datos inválidos. Verifique la información enviada.&#x27;})<br />@Post()<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="17"
-                                    class="link-to-prism">src/person/person.controller.ts:17</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="32"
+                                    class="link-to-prism">src/person/person.controller.ts:32</a></div>
                         </td>
                     </tr>
 
@@ -281,6 +301,8 @@
                     <a name="findAll"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>findAll</b></span>
                         <a href="#findAll"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -297,14 +319,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Get()<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Obtener todas las personas&#x27;, description: &#x27;Devuelve una lista completa de todas las personas registradas en el sistema, incluyendo doctores, pacientes y personal administrativo.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Lista de personas obtenida correctamente.&#x27;})<br />@Get()<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="25"
-                                    class="link-to-prism">src/person/person.controller.ts:25</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="50"
+                                    class="link-to-prism">src/person/person.controller.ts:50</a></div>
                         </td>
                     </tr>
 
@@ -327,6 +349,9 @@
                     <a name="findByRole"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>findByRole</b></span>
                         <a href="#findByRole"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -343,14 +368,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Get(&#x27;role/:role&#x27;)<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Obtener personas por rol&#x27;, description: &#x27;Devuelve todas las personas que tienen un rol específico, como &quot;Doctor&quot;, &quot;Paciente&quot; o &quot;Administrador&quot;.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Personas encontradas por rol.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontraron personas con el rol especificado.&#x27;})<br />@Get(&#x27;role/:role&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="44"
-                                    class="link-to-prism">src/person/person.controller.ts:44</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="96"
+                                    class="link-to-prism">src/person/person.controller.ts:96</a></div>
                         </td>
                     </tr>
 
@@ -403,6 +428,9 @@
                     <a name="findOne"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>findOne</b></span>
                         <a href="#findOne"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -419,14 +447,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Get(&#x27;:id&#x27;)<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Obtener una persona por su ID&#x27;, description: &#x27;Permite obtener la información detallada de una persona específica mediante su identificador único.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Persona encontrada exitosamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontró una persona con el ID especificado.&#x27;})<br />@Get(&#x27;:id&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="34"
-                                    class="link-to-prism">src/person/person.controller.ts:34</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="73"
+                                    class="link-to-prism">src/person/person.controller.ts:73</a></div>
                         </td>
                     </tr>
 
@@ -479,6 +507,9 @@
                     <a name="remove"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>remove</b></span>
                         <a href="#remove"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -495,14 +526,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Delete(&#x27;:id&#x27;)<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Eliminar una persona&#x27;, description: &#x27;Elimina permanentemente del sistema a la persona asociada al ID proporcionado.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Persona eliminada exitosamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontró la persona para eliminar.&#x27;})<br />@Delete(&#x27;:id&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="62"
-                                    class="link-to-prism">src/person/person.controller.ts:62</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="142"
+                                    class="link-to-prism">src/person/person.controller.ts:142</a></div>
                         </td>
                     </tr>
 
@@ -555,6 +586,9 @@
                     <a name="update"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>update</b></span>
                         <a href="#update"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -571,14 +605,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Patch(&#x27;:id&#x27;)<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Actualizar información de una persona&#x27;, description: &#x27;Permite modificar los datos personales o de rol de una persona registrada en el sistema.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Persona actualizada correctamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontró la persona para actualizar.&#x27;})<br />@Patch(&#x27;:id&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="53"
-                                    class="link-to-prism">src/person/person.controller.ts:53</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="119"
+                                    class="link-to-prism">src/person/person.controller.ts:119</a></div>
                         </td>
                     </tr>
 
@@ -640,11 +674,12 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Controller, Post, Body, Get, Param, Patch, Delete } from &#x27;@nestjs/common&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Controller, Post, Body, Get, Param, Patch, Delete, HttpStatus } from &#x27;@nestjs/common&#x27;;
 import { PersonService } from &#x27;./person.service&#x27;;
 import { CreatePersonDto } from &#x27;./dto/create-person.dto&#x27;;
 import { UpdatePersonDto } from &#x27;./dto/update-person.dto&#x27;;
 import { Person, Role } from &#x27;./person.entity&#x27;;
+import { ApiOperation, ApiResponse } from &#x27;@nestjs/swagger&#x27;;
 
 
 @Controller(&#x27;person&#x27;)
@@ -655,6 +690,20 @@ export class PersonController {
   //Create a new person
   //http:localhost:3000/person
   //The JSON Body must be in the format of the CreatePersonDto
+
+  @ApiOperation({ 
+    summary: &#x27;Crear una nueva persona&#x27;, 
+    description: &#x27;Registra una nueva persona en el sistema hospitalario, incluyendo su información básica, rol y credenciales de acceso.&#x27; 
+  })
+  @ApiResponse({ 
+    status: HttpStatus.CREATED, 
+    description: &#x27;Persona creada exitosamente.&#x27;, 
+  })
+  @ApiResponse({ 
+    status: HttpStatus.BAD_REQUEST, 
+    description: &#x27;Datos inválidos. Verifique la información enviada.&#x27; 
+  })
+
   @Post()
   create(@Body() dto: CreatePersonDto): Promise&lt;Person&gt; {
     return this.personService.create(dto);
@@ -663,6 +712,16 @@ export class PersonController {
   // ─── GET ───────────────────────────────────────────────
   //Get all persons
   //http:localhost:3000/person
+
+  @ApiOperation({ 
+    summary: &#x27;Obtener todas las personas&#x27;, 
+    description: &#x27;Devuelve una lista completa de todas las personas registradas en el sistema, incluyendo doctores, pacientes y personal administrativo.&#x27; 
+  })
+  @ApiResponse({ 
+    status: HttpStatus.OK, 
+    description: &#x27;Lista de personas obtenida correctamente.&#x27;, 
+  })
+
   @Get()
   findAll() {
     return this.personService.findAll();
@@ -672,6 +731,20 @@ export class PersonController {
   //Get person by id
   //http:localhost:3000/person/1
   //The param id is the id of the person, is required
+
+  @ApiOperation({ 
+    summary: &#x27;Obtener una persona por su ID&#x27;, 
+    description: &#x27;Permite obtener la información detallada de una persona específica mediante su identificador único.&#x27; 
+  })
+  @ApiResponse({ 
+    status: HttpStatus.OK, 
+    description: &#x27;Persona encontrada exitosamente.&#x27;, 
+  })
+  @ApiResponse({ 
+    status: HttpStatus.NOT_FOUND, 
+    description: &#x27;No se encontró una persona con el ID especificado.&#x27; 
+  })
+
   @Get(&#x27;:id&#x27;)
   findOne(@Param(&#x27;id&#x27;) id: number) {
     return this.personService.findOne(id);
@@ -682,6 +755,19 @@ export class PersonController {
   //Get person by role
   //http:localhost:3000/person/role/Doctor
   //The param role is the role of the person, is required
+
+  @ApiOperation({ 
+    summary: &#x27;Obtener personas por rol&#x27;, 
+    description: &#x27;Devuelve todas las personas que tienen un rol específico, como &quot;Doctor&quot;, &quot;Paciente&quot; o &quot;Administrador&quot;.&#x27; 
+  })
+  @ApiResponse({ 
+    status: HttpStatus.OK, 
+    description: &#x27;Personas encontradas por rol.&#x27;, 
+  })
+  @ApiResponse({ 
+    status: HttpStatus.NOT_FOUND, 
+    description: &#x27;No se encontraron personas con el rol especificado.&#x27; })
+
   @Get(&#x27;role/:role&#x27;)
   findByRole(@Param(&#x27;role&#x27;) role: Role) {
     return this.personService.findByrole(role);
@@ -691,6 +777,20 @@ export class PersonController {
   //Update an person
   //http:localhost:3000/person/1
   //The param id is the id of the person, is required for update
+
+  @ApiOperation({ 
+    summary: &#x27;Actualizar información de una persona&#x27;, 
+    description: &#x27;Permite modificar los datos personales o de rol de una persona registrada en el sistema.&#x27; 
+  })
+  @ApiResponse({ 
+    status: HttpStatus.OK, 
+    description: &#x27;Persona actualizada correctamente.&#x27;
+  })
+  @ApiResponse({ 
+    status: HttpStatus.NOT_FOUND, 
+    description: &#x27;No se encontró la persona para actualizar.&#x27; 
+  })
+
   @Patch(&#x27;:id&#x27;)
   update(@Param(&#x27;id&#x27;) id: number, @Body() dto: UpdatePersonDto) {
     return this.personService.update(id, dto);
@@ -700,6 +800,20 @@ export class PersonController {
   //Delete an person
   //http:localhost:3000/person/1
   //The param id is the id of the person, is required for delete
+
+  @ApiOperation({ 
+    summary: &#x27;Eliminar una persona&#x27;, 
+    description: &#x27;Elimina permanentemente del sistema a la persona asociada al ID proporcionado.&#x27; 
+  })
+  @ApiResponse({ 
+    status: HttpStatus.OK, 
+    description: &#x27;Persona eliminada exitosamente.&#x27; 
+  })
+  @ApiResponse({ 
+    status: HttpStatus.NOT_FOUND, 
+    description: &#x27;No se encontró la persona para eliminar.&#x27; 
+  })
+
   @Delete(&#x27;:id&#x27;)
   remove(@Param(&#x27;id&#x27;) id: number) {
     return this.personService.remove(id);
