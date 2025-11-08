@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Medicine } from './medicine.entity';
 import { Repository } from 'typeorm';
@@ -24,19 +24,37 @@ export class MedicineService {
     }
 
     // Find one medicine with relations id
-    findOne(id: number) {
-        return this.medicineRepository.findOne({where: {id}});
+    // findOne(id: number) {
+    //     return this.medicineRepository.findOne({where: {id}});
+    // }
+
+    async findOne(id: number) {
+        const medicine = await this.medicineRepository.findOne({ where: { id } });
+        if (!medicine) {
+            throw new NotFoundException(`Medicine with ID ${id} not found`);
+        }
+        return medicine;
     }
 
-    // Update medicine with correct relations
     async update(id: number, medicineDto: UpdateMedicineDto) {
-        await this.medicineRepository.update(id, medicineDto);
+        const result = await this.medicineRepository.update(id, medicineDto);
+        if (result.affected === 0) {
+            throw new NotFoundException(`Medicine with ID ${id} not found`);
+        }
         return this.findOne(id);
     }
 
-    // Delete medicine by id
-    remove(id: number) {
-        return this.medicineRepository.delete(id);
+    async remove(id: number) {
+        const result = await this.medicineRepository.delete(id);
+        if (result.affected === 0) {
+            throw new NotFoundException(`Medicine with ID ${id} not found`);
+        }
+        return { message: `Medicine with ID ${id} deleted successfully` };
     }
+
+    // // Delete medicine by id
+    // remove(id: number) {
+    //     return this.medicineRepository.delete(id);
+    // }
 }
 
