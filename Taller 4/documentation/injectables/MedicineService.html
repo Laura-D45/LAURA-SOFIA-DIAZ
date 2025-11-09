@@ -160,9 +160,11 @@
                                 <a href="#findAll" >findAll</a>
                             </li>
                             <li>
+                                    <span class="modifier">Async</span>
                                 <a href="#findOne" >findOne</a>
                             </li>
                             <li>
+                                    <span class="modifier">Async</span>
                                 <a href="#remove" >remove</a>
                             </li>
                             <li>
@@ -345,6 +347,7 @@
                 <td class="col-md-4">
                     <a name="findOne"></a>
                     <span class="name">
+                            <span class="modifier">Async</span>
                         <span ><b>findOne</b></span>
                         <a href="#findOne"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -352,15 +355,16 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>findOne(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>findOne(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
                 </td>
             </tr>
 
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="27"
-                                    class="link-to-prism">src/medicine/medicine.service.ts:27</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="31"
+                                    class="link-to-prism">src/medicine/medicine.service.ts:31</a></div>
                         </td>
                     </tr>
 
@@ -396,7 +400,7 @@
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                            <b>Returns : </b>    <code>unknown</code>
 
                         </div>
                             <div class="io-description">
@@ -412,6 +416,7 @@
                 <td class="col-md-4">
                     <a name="remove"></a>
                     <span class="name">
+                            <span class="modifier">Async</span>
                         <span ><b>remove</b></span>
                         <a href="#remove"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -419,15 +424,16 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>remove(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>remove(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
                 </td>
             </tr>
 
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="38"
-                                    class="link-to-prism">src/medicine/medicine.service.ts:38</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="47"
+                                    class="link-to-prism">src/medicine/medicine.service.ts:47</a></div>
                         </td>
                     </tr>
 
@@ -463,7 +469,7 @@
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                            <b>Returns : </b>    <code>unknown</code>
 
                         </div>
                             <div class="io-description">
@@ -495,8 +501,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="32"
-                                    class="link-to-prism">src/medicine/medicine.service.ts:32</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="39"
+                                    class="link-to-prism">src/medicine/medicine.service.ts:39</a></div>
                         </td>
                     </tr>
 
@@ -560,7 +566,7 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@nestjs/common&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable, NotFoundException } from &#x27;@nestjs/common&#x27;;
 import { InjectRepository } from &#x27;@nestjs/typeorm&#x27;;
 import { Medicine } from &#x27;./medicine.entity&#x27;;
 import { Repository } from &#x27;typeorm&#x27;;
@@ -586,20 +592,38 @@ export class MedicineService {
     }
 
     // Find one medicine with relations id
-    findOne(id: number) {
-        return this.medicineRepository.findOne({where: {id}});
+    // findOne(id: number) {
+    //     return this.medicineRepository.findOne({where: {id}});
+    // }
+
+    async findOne(id: number) {
+        const medicine &#x3D; await this.medicineRepository.findOne({ where: { id } });
+        if (!medicine) {
+            throw new NotFoundException(&#x60;Medicine with ID ${id} not found&#x60;);
+        }
+        return medicine;
     }
 
-    // Update medicine with correct relations
     async update(id: number, medicineDto: UpdateMedicineDto) {
-        await this.medicineRepository.update(id, medicineDto);
+        const result &#x3D; await this.medicineRepository.update(id, medicineDto);
+        if (result.affected &#x3D;&#x3D;&#x3D; 0) {
+            throw new NotFoundException(&#x60;Medicine with ID ${id} not found&#x60;);
+        }
         return this.findOne(id);
     }
 
-    // Delete medicine by id
-    remove(id: number) {
-        return this.medicineRepository.delete(id);
+    async remove(id: number) {
+        const result &#x3D; await this.medicineRepository.delete(id);
+        if (result.affected &#x3D;&#x3D;&#x3D; 0) {
+            throw new NotFoundException(&#x60;Medicine with ID ${id} not found&#x60;);
+        }
+        return { message: &#x60;Medicine with ID ${id} deleted successfully&#x60; };
     }
+
+    // // Delete medicine by id
+    // remove(id: number) {
+    //     return this.medicineRepository.delete(id);
+    // }
 }
 
 </code></pre>

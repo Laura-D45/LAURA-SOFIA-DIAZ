@@ -165,14 +165,17 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#disponible" >disponible</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#num_consultorio" >num_consultorio</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#piso" >piso</a>
                             </li>
@@ -202,6 +205,7 @@
                     <a name="disponible"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>disponible</b></span>
                         <a href="#disponible"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -218,13 +222,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsBoolean()<br />
+                            @ApiProperty({name: &#x27;disponible&#x27;, required: false, type: Boolean, description: &#x27;Indica si el consultorio permanece disponible o no.&#x27;, example: false})<br />@IsBoolean()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/office/dto/Update-office.dto.ts:15</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/office/dto/Update-office.dto.ts:40</a></div>
                         </td>
                     </tr>
 
@@ -237,6 +241,7 @@
                 <td class="col-md-4">
                     <a name="num_consultorio"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>num_consultorio</b></span>
@@ -255,13 +260,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsInt()<br />@IsPositive()<br />
+                            @ApiProperty({name: &#x27;num_consultorio&#x27;, required: false, type: Number, description: &#x27;Número actualizado del consultorio.&#x27;, example: 210})<br />@IsInt()<br />@IsPositive()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/office/dto/Update-office.dto.ts:9</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/office/dto/Update-office.dto.ts:18</a></div>
                         </td>
                     </tr>
 
@@ -274,6 +279,7 @@
                 <td class="col-md-4">
                     <a name="piso"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>piso</b></span>
                         <a href="#piso"><span class="icon ion-ios-link"></span></a>
@@ -291,13 +297,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsInt()<br />
+                            @ApiProperty({name: &#x27;piso&#x27;, required: false, type: Number, description: &#x27;Número de piso actualizado del consultorio.&#x27;, example: 2})<br />@IsInt()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/office/dto/Update-office.dto.ts:12</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/office/dto/Update-office.dto.ts:29</a></div>
                         </td>
                     </tr>
 
@@ -319,16 +325,41 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { PartialType } from &#x27;@nestjs/mapped-types&#x27;;
 import { IsBoolean, IsInt, IsPositive } from &#x27;class-validator&#x27;;
 import { CreateOfficeDto } from &#x27;./create-office.dto&#x27;;
+import { ApiProperty } from &#x27;@nestjs/swagger&#x27;;
 
 // Update Office DTO
 export class UpdateOfficeDto extends PartialType(CreateOfficeDto) {
+
+    @ApiProperty({
+    name: &#x27;num_consultorio&#x27;,
+    required: false,
+    type: Number,
+    description: &#x27;Número actualizado del consultorio.&#x27;,
+    example: 210
+    })
     @IsInt()
     @IsPositive()
     num_consultorio: number;
 
+
+    @ApiProperty({
+    name: &#x27;piso&#x27;,
+    required: false,
+    type: Number,
+    description: &#x27;Número de piso actualizado del consultorio.&#x27;,
+    example: 2
+    })
     @IsInt()
     piso: number;
 
+
+    @ApiProperty({
+    name: &#x27;disponible&#x27;,
+    required: false,
+    type: Boolean,
+    description: &#x27;Indica si el consultorio permanece disponible o no.&#x27;,
+    example: false
+    })
     @IsBoolean()
     disponible: boolean;
 }</code></pre>

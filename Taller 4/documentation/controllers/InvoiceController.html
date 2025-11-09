@@ -159,21 +159,39 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#create" >create</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#findAll" >findAll</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#findOne" >findOne</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#remove" >remove</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#update" >update</a>
                             </li>
@@ -201,6 +219,9 @@
                     <a name="create"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>create</b></span>
                         <a href="#create"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -217,14 +238,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Post()<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Crear una nueva factura&#x27;, description: &#x27;Registra una nueva factura en el sistema.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Factura creada exitosamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Los datos proporcionados son inválidos o incompletos.&#x27;})<br />@Post()<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="15"
-                                    class="link-to-prism">src/invoice/invoice.controller.ts:15</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="30"
+                                    class="link-to-prism">src/invoice/invoice.controller.ts:30</a></div>
                         </td>
                     </tr>
 
@@ -277,6 +298,8 @@
                     <a name="findAll"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>findAll</b></span>
                         <a href="#findAll"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -293,14 +316,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Get()<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Obtener todas las facturas&#x27;, description: &#x27;Devuelve una lista de todas las facturas registradas en el sistema, incluyendo su total, método de pago y estado de pago.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Listado de facturas obtenido correctamente.&#x27;})<br />@Get()<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="23"
-                                    class="link-to-prism">src/invoice/invoice.controller.ts:23</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="48"
+                                    class="link-to-prism">src/invoice/invoice.controller.ts:48</a></div>
                         </td>
                     </tr>
 
@@ -323,6 +346,10 @@
                     <a name="findOne"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>findOne</b></span>
                         <a href="#findOne"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -339,14 +366,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Get(&#x27;:id&#x27;)<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Obtener una factura por su ID&#x27;, description: &#x27;Permite obtener los detalles de una factura específica utilizando su identificador único.&#x27;})<br />@ApiParam({name: &#x27;id&#x27;, type: Number, description: &#x27;ID de la factura a consultar.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Factura encontrada exitosamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontró ninguna factura con el ID especificado.&#x27;})<br />@Get(&#x27;:id&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="32"
-                                    class="link-to-prism">src/invoice/invoice.controller.ts:32</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="76"
+                                    class="link-to-prism">src/invoice/invoice.controller.ts:76</a></div>
                         </td>
                     </tr>
 
@@ -399,6 +426,10 @@
                     <a name="remove"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>remove</b></span>
                         <a href="#remove"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -415,14 +446,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Delete(&#x27;:id&#x27;)<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Eliminar una factura&#x27;, description: &#x27;Elimina permanentemente una factura del sistema. Esta acción no se puede deshacer.&#x27;})<br />@ApiParam({name: &#x27;id&#x27;, type: Number, description: &#x27;ID de la factura a eliminar.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Factura eliminada exitosamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontró ninguna factura con el ID especificado.&#x27;})<br />@Delete(&#x27;:id&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="50"
-                                    class="link-to-prism">src/invoice/invoice.controller.ts:50</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="136"
+                                    class="link-to-prism">src/invoice/invoice.controller.ts:136</a></div>
                         </td>
                     </tr>
 
@@ -475,6 +506,11 @@
                     <a name="update"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>update</b></span>
                         <a href="#update"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -491,14 +527,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Patch(&#x27;:id&#x27;)<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Actualizar una factura existente&#x27;, description: &#x27;Permite modificar los datos de una factura existente.&#x27;})<br />@ApiParam({name: &#x27;id&#x27;, type: Number, description: &#x27;ID de la factura que se desea actualizar.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Factura actualizada exitosamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Los datos enviados son inválidos o incompletos.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontró ninguna factura con el ID especificado.&#x27;})<br />@Patch(&#x27;:id&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="41"
-                                    class="link-to-prism">src/invoice/invoice.controller.ts:41</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="108"
+                                    class="link-to-prism">src/invoice/invoice.controller.ts:108</a></div>
                         </td>
                     </tr>
 
@@ -560,10 +596,11 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Controller, Get, Post, Body, Patch, Param, Delete } from &#x27;@nestjs/common&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Controller, Get, Post, Body, Patch, Param, Delete, HttpStatus } from &#x27;@nestjs/common&#x27;;
 import { InvoiceService } from &#x27;./invoice.service&#x27;;
 import { CreateInvoiceDto } from &#x27;./dto/create-invoice.dto&#x27;;
 import { UpdateInvoiceDto } from &#x27;./dto/update-invoice.dto&#x27;;
+import { ApiOperation, ApiParam, ApiResponse } from &#x27;@nestjs/swagger&#x27;;
 
 @Controller(&#x27;invoice&#x27;)
 export class InvoiceController {
@@ -573,6 +610,20 @@ export class InvoiceController {
   //Create a new invoice
   //http:localhost:3000/invoice
   //The JSON Body must be in the format of the CreateInvoiceDto
+
+  @ApiOperation({
+    summary: &#x27;Crear una nueva factura&#x27;,
+    description:&#x27;Registra una nueva factura en el sistema.&#x27;
+  })
+  @ApiResponse({
+    status: HttpStatus.CREATED,
+    description: &#x27;Factura creada exitosamente.&#x27;,
+  })
+  @ApiResponse({
+    status: HttpStatus.BAD_REQUEST,
+    description: &#x27;Los datos proporcionados son inválidos o incompletos.&#x27;,
+  })
+
   @Post()
   create(@Body() createInvoiceDto: CreateInvoiceDto) {
     return this.invoiceService.create(createInvoiceDto);
@@ -581,6 +632,16 @@ export class InvoiceController {
   // ─── GET ───────────────────────────────────────────────
   //Get all invoices
   //http:localhost:3000/invoice
+
+  @ApiOperation({
+    summary: &#x27;Obtener todas las facturas&#x27;,
+    description:&#x27;Devuelve una lista de todas las facturas registradas en el sistema, incluyendo su total, método de pago y estado de pago.&#x27;,
+  })
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description: &#x27;Listado de facturas obtenido correctamente.&#x27;,
+  })
+
   @Get()
   findAll() {
     return this.invoiceService.findAll();
@@ -590,6 +651,25 @@ export class InvoiceController {
   //Get invoice by id
   //http:localhost:3000/invoice/1
   //The param id is the id of the invoice, is required
+
+  @ApiOperation({
+    summary: &#x27;Obtener una factura por su ID&#x27;,
+    description:&#x27;Permite obtener los detalles de una factura específica utilizando su identificador único.&#x27;,
+  })
+  @ApiParam({
+    name: &#x27;id&#x27;,
+    type: Number,
+    description: &#x27;ID de la factura a consultar.&#x27;,
+  })
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description: &#x27;Factura encontrada exitosamente.&#x27;,
+  })
+  @ApiResponse({
+    status: HttpStatus.NOT_FOUND,
+    description: &#x27;No se encontró ninguna factura con el ID especificado.&#x27;,
+  })
+
   @Get(&#x27;:id&#x27;)
   findOne(@Param(&#x27;id&#x27;) id: string) {
     return this.invoiceService.findOne(+id);
@@ -599,6 +679,29 @@ export class InvoiceController {
   // Update invoice
   // http:localhost:3000/invoice/1
   // The param id is the id of the invoice, is required for update
+
+  @ApiOperation({
+    summary: &#x27;Actualizar una factura existente&#x27;,
+    description:&#x27;Permite modificar los datos de una factura existente.&#x27;
+  })
+  @ApiParam({
+    name: &#x27;id&#x27;,
+    type: Number,
+    description: &#x27;ID de la factura que se desea actualizar.&#x27;,
+  })
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description: &#x27;Factura actualizada exitosamente.&#x27;,
+  })
+  @ApiResponse({
+    status: HttpStatus.BAD_REQUEST,
+    description: &#x27;Los datos enviados son inválidos o incompletos.&#x27;,
+  })
+  @ApiResponse({
+    status: HttpStatus.NOT_FOUND,
+    description: &#x27;No se encontró ninguna factura con el ID especificado.&#x27;,
+  })
+
   @Patch(&#x27;:id&#x27;)
   update(@Param(&#x27;id&#x27;) id: string, @Body() updateInvoiceDto: UpdateInvoiceDto) {
     return this.invoiceService.update(+id, updateInvoiceDto);
@@ -608,6 +711,25 @@ export class InvoiceController {
   // Delete invoice
   // http:localhost:3000/invoice/1
   // The param id is the id of the invoice, is required for delete
+
+  @ApiOperation({
+    summary: &#x27;Eliminar una factura&#x27;,
+    description:&#x27;Elimina permanentemente una factura del sistema. Esta acción no se puede deshacer.&#x27;
+  })
+  @ApiParam({
+    name: &#x27;id&#x27;,
+    type: Number,
+    description: &#x27;ID de la factura a eliminar.&#x27;,
+  })
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description: &#x27;Factura eliminada exitosamente.&#x27;,
+  })
+  @ApiResponse({
+    status: HttpStatus.NOT_FOUND,
+    description: &#x27;No se encontró ninguna factura con el ID especificado.&#x27;,
+  })
+
   @Delete(&#x27;:id&#x27;)
   remove(@Param(&#x27;id&#x27;) id: string) {
     return this.invoiceService.remove(+id);

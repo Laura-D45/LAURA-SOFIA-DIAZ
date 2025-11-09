@@ -159,21 +159,40 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#create" >create</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#findAll" >findAll</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#findOne" >findOne</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#remove" >remove</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#update" >update</a>
                             </li>
@@ -201,6 +220,9 @@
                     <a name="create"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>create</b></span>
                         <a href="#create"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -217,14 +239,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Post()<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Crear una nueva cita médica&#x27;, description: &#x27;Permite registrar una nueva cita médica asociando un paciente, un doctor y una oficina.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;La cita médica fue creada exitosamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Los datos enviados no cumplen con las validaciones requeridas.&#x27;})<br />@Post()<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="15"
-                                    class="link-to-prism">src/appointment/appointment.controller.ts:15</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="30"
+                                    class="link-to-prism">src/appointment/appointment.controller.ts:30</a></div>
                         </td>
                     </tr>
 
@@ -277,6 +299,8 @@
                     <a name="findAll"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>findAll</b></span>
                         <a href="#findAll"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -293,14 +317,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Get()<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Obtener todas las citas médicas&#x27;, description: &#x27;Devuelve una lista de todas las citas médicas registradas en el sistema, incluyendo su fecha, estado y relaciones con paciente y doctor.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Listado de citas médicas obtenido correctamente.&#x27;})<br />@Get()<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="23"
-                                    class="link-to-prism">src/appointment/appointment.controller.ts:23</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="48"
+                                    class="link-to-prism">src/appointment/appointment.controller.ts:48</a></div>
                         </td>
                     </tr>
 
@@ -323,6 +347,11 @@
                     <a name="findOne"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>findOne</b></span>
                         <a href="#findOne"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -339,14 +368,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Get(&#x27;:id&#x27;)<br /></code>
+                    <code>@Get(&#x27;:id&#x27;)<br />@ApiOperation({summary: &#x27;Obtener una cita médica por su ID&#x27;, description: &#x27;Busca una cita médica específica por su identificador único.&#x27;})<br />@ApiParam({name: &#x27;id&#x27;, type: Number, required: true, description: &#x27;Identificador único de la cita médica.&#x27;, example: 1})<br />@ApiResponse({status: undefined, description: &#x27;Cita médica encontrada exitosamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontró ninguna cita con el ID proporcionado.&#x27;})<br />@Get(&#x27;:id&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="32"
-                                    class="link-to-prism">src/appointment/appointment.controller.ts:32</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="79"
+                                    class="link-to-prism">src/appointment/appointment.controller.ts:79</a></div>
                         </td>
                     </tr>
 
@@ -399,6 +428,10 @@
                     <a name="remove"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>remove</b></span>
                         <a href="#remove"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -415,14 +448,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Delete(&#x27;:id&#x27;)<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Eliminar una cita médica&#x27;, description: &#x27;Elimina del sistema una cita médica identificada por su ID.&#x27;})<br />@ApiParam({name: &#x27;id&#x27;, type: Number, required: true, description: &#x27;Identificador único de la cita médica a eliminar.&#x27;, example: 1})<br />@ApiResponse({status: undefined, description: &#x27;Cita médica eliminada correctamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontró ninguna cita con el ID especificado.&#x27;})<br />@Delete(&#x27;:id&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="50"
-                                    class="link-to-prism">src/appointment/appointment.controller.ts:50</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="143"
+                                    class="link-to-prism">src/appointment/appointment.controller.ts:143</a></div>
                         </td>
                     </tr>
 
@@ -475,6 +508,11 @@
                     <a name="update"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>update</b></span>
                         <a href="#update"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -491,14 +529,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Patch(&#x27;:id&#x27;)<br /></code>
+                    <code>@ApiOperation({summary: &#x27;Actualizar una cita médica existente&#x27;, description: &#x27;Actualiza la información de una cita médica identificada por su ID.&#x27;})<br />@ApiParam({name: &#x27;id&#x27;, type: Number, required: true, description: &#x27;Identificador único de la cita médica a actualizar.&#x27;, example: 1})<br />@ApiResponse({status: undefined, description: &#x27;Cita médica actualizada correctamente.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;No se encontró ninguna cita con el ID especificado.&#x27;})<br />@ApiResponse({status: undefined, description: &#x27;Los datos enviados son inválidos o incompletos.&#x27;})<br />@Patch(&#x27;:id&#x27;)<br /></code>
                 </td>
             </tr>
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="41"
-                                    class="link-to-prism">src/appointment/appointment.controller.ts:41</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="113"
+                                    class="link-to-prism">src/appointment/appointment.controller.ts:113</a></div>
                         </td>
                     </tr>
 
@@ -560,10 +598,11 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Controller, Get, Post, Body, Patch, Param, Delete, NotFoundException, BadRequestException } from &#x27;@nestjs/common&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Controller, Get, Post, Body, Patch, Param, Delete, HttpStatus } from &#x27;@nestjs/common&#x27;;
 import { AppointmentService } from &#x27;./appointment.service&#x27;;
 import { CreateAppointmentDto } from &#x27;./dto/create-appointment.dto&#x27;;
 import { UpdateAppointmentDto } from &#x27;./dto/update-appointment.dto&#x27;;
+import { ApiOperation, ApiParam, ApiResponse } from &#x27;@nestjs/swagger&#x27;;
 
 @Controller(&#x27;appointment&#x27;)
 export class AppointmentController {
@@ -573,6 +612,20 @@ export class AppointmentController {
   //Create a new appointment
   //http:localhost:3000/appointment
   //The JSON Body must be in the format of the CreateAppointmentDto
+  
+  @ApiOperation({
+    summary: &#x27;Crear una nueva cita médica&#x27;,
+    description:&#x27;Permite registrar una nueva cita médica asociando un paciente, un doctor y una oficina.&#x27;
+  })
+  @ApiResponse({
+    status: HttpStatus.CREATED,
+    description: &#x27;La cita médica fue creada exitosamente.&#x27;,
+  })
+  @ApiResponse({
+    status: HttpStatus.BAD_REQUEST,
+    description: &#x27;Los datos enviados no cumplen con las validaciones requeridas.&#x27;,
+  })
+  
   @Post()
   create(@Body() createAppointmentDto: CreateAppointmentDto) {
     return this.appointmentService.create(createAppointmentDto);
@@ -581,6 +634,16 @@ export class AppointmentController {
     // ─── GET ───────────────────────────────────────────────
     //Get all appointments
     //http:localhost:3000/appointment
+
+    @ApiOperation({
+    summary: &#x27;Obtener todas las citas médicas&#x27;,
+    description:&#x27;Devuelve una lista de todas las citas médicas registradas en el sistema, incluyendo su fecha, estado y relaciones con paciente y doctor.&#x27;
+  })
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description: &#x27;Listado de citas médicas obtenido correctamente.&#x27;,
+  })
+
   @Get()
   findAll() {
     return this.appointmentService.findAll();
@@ -590,6 +653,28 @@ export class AppointmentController {
     //Get appointment by id
     //http:localhost:3000/appointment/1
     //The param id is the id of the appointment, is required
+
+    @Get(&#x27;:id&#x27;)
+  @ApiOperation({
+    summary: &#x27;Obtener una cita médica por su ID&#x27;,
+    description:&#x27;Busca una cita médica específica por su identificador único.&#x27;
+  })
+  @ApiParam({
+    name: &#x27;id&#x27;,
+    type: Number,
+    required: true,
+    description: &#x27;Identificador único de la cita médica.&#x27;,
+    example: 1,
+  })
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description: &#x27;Cita médica encontrada exitosamente.&#x27;,
+  })
+  @ApiResponse({
+    status: HttpStatus.NOT_FOUND,
+    description: &#x27;No se encontró ninguna cita con el ID proporcionado.&#x27;,
+  })
+
   @Get(&#x27;:id&#x27;)
   findOne(@Param(&#x27;id&#x27;) id: string) {
     return this.appointmentService.findOne(+id);
@@ -599,6 +684,31 @@ export class AppointmentController {
     //Update an appointment
     //http:localhost:3000/appointment/1
     //The param id is the id of the appointment, is required for update
+
+    @ApiOperation({
+    summary: &#x27;Actualizar una cita médica existente&#x27;,
+    description:&#x27;Actualiza la información de una cita médica identificada por su ID.&#x27;
+  })
+  @ApiParam({
+    name: &#x27;id&#x27;,
+    type: Number,
+    required: true,
+    description: &#x27;Identificador único de la cita médica a actualizar.&#x27;,
+    example: 1,
+  })
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description: &#x27;Cita médica actualizada correctamente.&#x27;,
+  })
+  @ApiResponse({
+    status: HttpStatus.NOT_FOUND,
+    description: &#x27;No se encontró ninguna cita con el ID especificado.&#x27;,
+  })
+  @ApiResponse({
+    status: HttpStatus.BAD_REQUEST,
+    description: &#x27;Los datos enviados son inválidos o incompletos.&#x27;,
+  })
+
   @Patch(&#x27;:id&#x27;)
   update(@Param(&#x27;id&#x27;) id: string, @Body() updateAppointmentDto: UpdateAppointmentDto) {
     return this.appointmentService.update(+id, updateAppointmentDto);
@@ -608,6 +718,27 @@ export class AppointmentController {
     //Delete an appointment
     //http:localhost:3000/appointment/1
     //The param id is the id of the appointment, is required for delete
+
+    @ApiOperation({
+    summary: &#x27;Eliminar una cita médica&#x27;,
+    description:
+      &#x27;Elimina del sistema una cita médica identificada por su ID.&#x27;
+  })
+  @ApiParam({
+    name: &#x27;id&#x27;,
+    type: Number,
+    required: true,
+    description: &#x27;Identificador único de la cita médica a eliminar.&#x27;,
+    example: 1,
+  })
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description: &#x27;Cita médica eliminada correctamente.&#x27;,
+  })
+  @ApiResponse({
+    status: HttpStatus.NOT_FOUND,
+    description: &#x27;No se encontró ninguna cita con el ID especificado.&#x27;,
+  })
   @Delete(&#x27;:id&#x27;)
   remove(@Param(&#x27;id&#x27;) id: string) {
     return this.appointmentService.remove(+id);

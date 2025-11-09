@@ -161,9 +161,11 @@
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#description" >description</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#name" >name</a>
@@ -171,9 +173,11 @@
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#presentation" >presentation</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#price" >price</a>
@@ -181,9 +185,11 @@
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#stock" >stock</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#type" >type</a>
@@ -216,6 +222,7 @@
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>description</b></span>
                         <a href="#description"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -232,13 +239,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@Length(2, 50)<br />@IsOptional()<br />
+                            @ApiPropertyOptional({name: &#x27;description&#x27;, required: false, type: String, description: &#x27;Descripción breve del medicamento.&#x27;, example: &#x27;Analgésico y antipirético de venta libre.&#x27;})<br />@IsString()<br />@Length(2, 50)<br />@IsOptional()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/medicine/dto/create-medicine.dto.ts:26</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/medicine/dto/create-medicine.dto.ts:66</a></div>
                         </td>
                     </tr>
 
@@ -251,6 +258,7 @@
                 <td class="col-md-4">
                     <a name="name"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>name</b></span>
@@ -269,13 +277,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@Length(2, 100)<br />
+                            @ApiProperty({name: &#x27;name&#x27;, required: true, type: String, description: &#x27;Nombre del medicamento.&#x27;, example: &#x27;Paracetamol 500mg&#x27;})<br />@IsString()<br />@Length(2, 100)<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/medicine/dto/create-medicine.dto.ts:9</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/medicine/dto/create-medicine.dto.ts:17</a></div>
                         </td>
                     </tr>
 
@@ -288,6 +296,7 @@
                 <td class="col-md-4">
                     <a name="presentation"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>presentation</b></span>
@@ -306,13 +315,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@Length(2, 50)<br />
+                            @ApiProperty({name: &#x27;presentation&#x27;, required: true, type: String, description: &#x27;Presentación del medicamento.&#x27;, example: &#x27;Caja de 10 unidades&#x27;})<br />@IsString()<br />@Length(2, 50)<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/medicine/dto/create-medicine.dto.ts:17</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/medicine/dto/create-medicine.dto.ts:41</a></div>
                         </td>
                     </tr>
 
@@ -325,6 +334,7 @@
                 <td class="col-md-4">
                     <a name="price"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>price</b></span>
@@ -343,13 +353,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsInt()<br />@Min(0)<br />
+                            @ApiProperty({name: &#x27;price&#x27;, required: true, type: Number, description: &#x27;Precio unitario del medicamento.&#x27;, example: 3500})<br />@IsInt()<br />@Min(0)<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/medicine/dto/create-medicine.dto.ts:30</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/medicine/dto/create-medicine.dto.ts:78</a></div>
                         </td>
                     </tr>
 
@@ -362,6 +372,7 @@
                 <td class="col-md-4">
                     <a name="stock"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>stock</b></span>
@@ -380,13 +391,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsInt()<br />@Min(0)<br />
+                            @ApiProperty({name: &#x27;stock&#x27;, required: true, type: Number, description: &#x27;Cantidad disponible en inventario.&#x27;, example: 150})<br />@IsInt()<br />@Min(0)<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/medicine/dto/create-medicine.dto.ts:21</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/medicine/dto/create-medicine.dto.ts:53</a></div>
                         </td>
                     </tr>
 
@@ -399,6 +410,7 @@
                 <td class="col-md-4">
                     <a name="type"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>type</b></span>
@@ -417,13 +429,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@Length(2, 50)<br />
+                            @ApiProperty({name: &#x27;type&#x27;, required: true, type: String, description: &#x27;Tipo de medicamento (tableta, jarabe, cápsula, etc.).&#x27;, example: &#x27;Tableta&#x27;})<br />@IsString()<br />@Length(2, 50)<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/medicine/dto/create-medicine.dto.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/medicine/dto/create-medicine.dto.ts:29</a></div>
                         </td>
                     </tr>
 
@@ -442,33 +454,81 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { IsInt, IsOptional, IsString, Length, Min } from &quot;class-validator&quot;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ApiProperty, ApiPropertyOptional } from &quot;@nestjs/swagger&quot;;
+import { IsInt, IsOptional, IsString, Length, Min } from &quot;class-validator&quot;;
 
 
 // Create Medicine DTO
 export class CreateMedicineDto {
 
+    @ApiProperty({
+    name: &#x27;name&#x27;,
+    required: true,
+    type: String,
+    description: &#x27;Nombre del medicamento.&#x27;,
+    example: &#x27;Paracetamol 500mg&#x27;
+    })
     @IsString()
     @Length(2, 100)
     name: string;
 
+
+    @ApiProperty({
+    name: &#x27;type&#x27;,
+    required: true,
+    type: String,
+    description: &#x27;Tipo de medicamento (tableta, jarabe, cápsula, etc.).&#x27;,
+    example: &#x27;Tableta&#x27;
+    })
     @IsString()
     @Length(2, 50)
     type: string;
 
+
+    @ApiProperty({
+    name: &#x27;presentation&#x27;,
+    required: true,
+    type: String,
+    description: &#x27;Presentación del medicamento.&#x27;,
+    example: &#x27;Caja de 10 unidades&#x27;
+    })
     @IsString()
     @Length(2, 50)
     presentation: string;
 
+
+    @ApiProperty({
+    name: &#x27;stock&#x27;,
+    required: true,
+    type: Number,
+    description: &#x27;Cantidad disponible en inventario.&#x27;,
+    example: 150
+    })
     @IsInt()
     @Min(0)
     stock: number;
 
+
+    @ApiPropertyOptional({
+    name: &#x27;description&#x27;,
+    required: false,
+    type: String,
+    description: &#x27;Descripción breve del medicamento.&#x27;,
+    example: &#x27;Analgésico y antipirético de venta libre.&#x27;
+    })
     @IsString()
     @Length(2, 50)
     @IsOptional()
     description: string;
 
+
+    @ApiProperty({
+    name: &#x27;price&#x27;,
+    required: true,
+    type: Number,
+    description: &#x27;Precio unitario del medicamento.&#x27;,
+    example: 3500
+    })
     @IsInt()
     @Min(0)
     price: string;

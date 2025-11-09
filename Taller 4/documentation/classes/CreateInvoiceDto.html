@@ -160,10 +160,12 @@
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                     <span class="modifier">Optional</span>
                                 <a href="#estado_pago" >estado_pago</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier">Optional</span>
@@ -171,17 +173,21 @@
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#id_cita" >id_cita</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#id_paciente" >id_paciente</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#metodo_pago" >metodo_pago</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#total" >total</a>
                             </li>
@@ -212,6 +218,7 @@
                     <span class="name">
                             <span class="modifier"></span>
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
                             <span class="modifier">Optional</span>
                         <span ><b>estado_pago</b></span>
                         <a href="#estado_pago"><span class="icon ion-ios-link"></span></a>
@@ -229,13 +236,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@IsOptional()<br />
+                            @ApiPropertyOptional({name: &#x27;estado_pago&#x27;, required: false, type: String, description: &#x27;Estado actual del pago. Puede ser &quot;pendiente&quot;, &quot;pagado&quot; o &quot;cancelado&quot;.&#x27;, example: &#x27;pendiente&#x27;})<br />@IsString()<br />@IsOptional()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/invoice/dto/create-invoice.dto.ts:17</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/invoice/dto/create-invoice.dto.ts:50</a></div>
                         </td>
                     </tr>
 
@@ -248,6 +255,7 @@
                 <td class="col-md-4">
                     <a name="fecha"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier">Optional</span>
@@ -267,13 +275,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsDateString()<br />@IsOptional()<br />
+                            @ApiPropertyOptional({name: &#x27;fecha&#x27;, required: false, type: String, description: &#x27;Fecha en la que se genera la factura. Si no se proporciona, se autogenera en la base de datos.&#x27;, example: &#x27;2025-10-29&#x27;})<br />@IsDateString()<br />@IsOptional()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="7" class="link-to-prism">src/invoice/dto/create-invoice.dto.ts:7</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/invoice/dto/create-invoice.dto.ts:16</a></div>
                         </td>
                     </tr>
 
@@ -286,6 +294,7 @@
                 <td class="col-md-4">
                     <a name="id_cita"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>id_cita</b></span>
                         <a href="#id_cita"><span class="icon ion-ios-link"></span></a>
@@ -303,13 +312,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsNumber()<br />
+                            @ApiProperty({name: &#x27;id_cita&#x27;, required: true, type: Number, description: &#x27;Identificador de la cita asociada a la factura. Debe existir en el sistema.&#x27;, example: 4})<br />@IsNumber()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/invoice/dto/create-invoice.dto.ts:23</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/invoice/dto/create-invoice.dto.ts:72</a></div>
                         </td>
                     </tr>
 
@@ -322,6 +331,7 @@
                 <td class="col-md-4">
                     <a name="id_paciente"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>id_paciente</b></span>
                         <a href="#id_paciente"><span class="icon ion-ios-link"></span></a>
@@ -339,13 +349,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsNumber()<br />
+                            @ApiProperty({name: &#x27;id_paciente&#x27;, required: true, type: Number, description: &#x27;Identificador del paciente al que pertenece la factura. Debe existir en el sistema.&#x27;, example: 8})<br />@IsNumber()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/invoice/dto/create-invoice.dto.ts:20</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/invoice/dto/create-invoice.dto.ts:61</a></div>
                         </td>
                     </tr>
 
@@ -358,6 +368,7 @@
                 <td class="col-md-4">
                     <a name="metodo_pago"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>metodo_pago</b></span>
                         <a href="#metodo_pago"><span class="icon ion-ios-link"></span></a>
@@ -375,13 +386,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />
+                            @ApiProperty({name: &#x27;metodo_pago&#x27;, required: true, type: String, description: &#x27;Método de pago utilizado. Puede ser &quot;efectivo&quot;, &quot;tarjeta&quot;, &quot;transferencia&quot;, etc.&#x27;, example: &#x27;tarjeta&#x27;})<br />@IsString()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/invoice/dto/create-invoice.dto.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/invoice/dto/create-invoice.dto.ts:38</a></div>
                         </td>
                     </tr>
 
@@ -394,6 +405,7 @@
                 <td class="col-md-4">
                     <a name="total"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>total</b></span>
                         <a href="#total"><span class="icon ion-ios-link"></span></a>
@@ -411,13 +423,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsNumber()<br />
+                            @ApiProperty({name: &#x27;total&#x27;, required: true, type: Number, description: &#x27;Monto total de la factura. Debe ser un número positivo.&#x27;, example: 150000})<br />@IsNumber()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/invoice/dto/create-invoice.dto.ts:10</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/invoice/dto/create-invoice.dto.ts:27</a></div>
                         </td>
                     </tr>
 
@@ -436,27 +448,76 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { IsDateString, IsNumber, IsString, IsOptional } from &quot;class-validator&quot;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ApiProperty, ApiPropertyOptional } from &quot;@nestjs/swagger&quot;;
+import { IsDateString, IsNumber, IsString, IsOptional } from &quot;class-validator&quot;;
 
 // Create Invoice DTO
 export class CreateInvoiceDto {
+
+    @ApiPropertyOptional({
+    name: &#x27;fecha&#x27;,
+    required: false,
+    type: String,
+    description:&#x27;Fecha en la que se genera la factura. Si no se proporciona, se autogenera en la base de datos.&#x27;,
+    example: &#x27;2025-10-29&#x27;,
+    })
     @IsDateString()
     @IsOptional() // porque el valor se autogenera en la BD
     fecha?: Date;
 
+
+    @ApiProperty({
+    name: &#x27;total&#x27;,
+    required: true,
+    type: Number,
+    description: &#x27;Monto total de la factura. Debe ser un número positivo.&#x27;,
+    example: 150000,
+    })
     @IsNumber()
     total: number;
 
+
+    @ApiProperty({
+    name: &#x27;metodo_pago&#x27;,
+    required: true,
+    type: String,
+    description:&#x27;Método de pago utilizado. Puede ser &quot;efectivo&quot;, &quot;tarjeta&quot;, &quot;transferencia&quot;, etc.&#x27;,
+    example: &#x27;tarjeta&#x27;,
+    })
     @IsString()
     metodo_pago: string;
 
+
+    @ApiPropertyOptional({
+    name: &#x27;estado_pago&#x27;,
+    required: false,
+    type: String,
+    description:&#x27;Estado actual del pago. Puede ser &quot;pendiente&quot;, &quot;pagado&quot; o &quot;cancelado&quot;.&#x27;,
+    example: &#x27;pendiente&#x27;,
+    })
     @IsString()
     @IsOptional()
     estado_pago?: string;
 
+
+    @ApiProperty({
+    name: &#x27;id_paciente&#x27;,
+    required: true,
+    type: Number,
+    description:&#x27;Identificador del paciente al que pertenece la factura. Debe existir en el sistema.&#x27;,
+    example: 8,
+    })
     @IsNumber()
     id_paciente: number;
 
+
+    @ApiProperty({
+    name: &#x27;id_cita&#x27;,
+    required: true,
+    type: Number,
+    description:&#x27;Identificador de la cita asociada a la factura. Debe existir en el sistema.&#x27;,
+    example: 4,
+    })
     @IsNumber()
     id_cita: number;
 }

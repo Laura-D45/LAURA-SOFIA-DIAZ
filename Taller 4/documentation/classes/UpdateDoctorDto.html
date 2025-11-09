@@ -165,6 +165,7 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#licenseNumber" >licenseNumber</a>
                             </li>
                         </ul>
@@ -193,6 +194,7 @@
                     <a name="licenseNumber"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>licenseNumber</b></span>
                         <a href="#licenseNumber"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -209,13 +211,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />
+                            @ApiPropertyOptional({name: &#x27;licenseNumber&#x27;, required: false, type: String, description: &#x27;Número de licencia médica actualizado del doctor. Solo debe enviarse si se desea modificar.&#x27;, example: &#x27;MD-123456-UPDATED&#x27;})<br />@IsString()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/doctor/dto/update-doctor.dto.ts:10</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/doctor/dto/update-doctor.dto.ts:20</a></div>
                         </td>
                     </tr>
 
@@ -237,11 +239,21 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { PartialType } from &quot;@nestjs/mapped-types&quot;;
 import { CreateDoctorDto } from &quot;./create-doctor.dto&quot;;
 import { IsString } from &quot;class-validator&quot;;
+import { ApiPropertyOptional } from &quot;@nestjs/swagger&quot;;
 
 
 export class UpdateDoctorDto extends PartialType(CreateDoctorDto) { 
     
     // Update licenseNumber of Doctor
+
+    @ApiPropertyOptional({
+    name: &#x27;licenseNumber&#x27;,
+    required: false,
+    type: String,
+    description:&#x27;Número de licencia médica actualizado del doctor. Solo debe enviarse si se desea modificar.&#x27;,
+    example: &#x27;MD-123456-UPDATED&#x27;,
+    })
+
     @IsString()
     licenseNumber: string;
 

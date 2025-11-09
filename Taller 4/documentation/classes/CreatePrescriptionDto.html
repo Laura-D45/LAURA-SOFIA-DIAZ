@@ -159,9 +159,11 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#appointmentId" >appointmentId</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier">Optional</span>
@@ -171,22 +173,27 @@
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#details" >details</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#duration" >duration</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#medicineId" >medicineId</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#observations" >observations</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#quantity" >quantity</a>
                             </li>
@@ -216,6 +223,7 @@
                     <a name="appointmentId"></a>
                     <span class="name">
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>appointmentId</b></span>
                         <a href="#appointmentId"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -232,13 +240,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsNumber()<br />
+                            @ApiProperty({name: &#x27;appointmentId&#x27;, type: Number, description: &#x27;Identificador de la cita médica asociada a la prescripción.&#x27;, example: 12})<br />@IsNumber()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/prescription/dto/create-prescription.dto.ts:24</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/prescription/dto/create-prescription.dto.ts:59</a></div>
                         </td>
                     </tr>
 
@@ -251,6 +259,7 @@
                 <td class="col-md-4">
                     <a name="date"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier">Optional</span>
@@ -270,13 +279,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsDateString()<br />@IsOptional()<br />
+                            @ApiPropertyOptional({name: &#x27;date&#x27;, type: String, description: &#x27;Fecha de creación de la prescripción (por defecto la actual).&#x27;, example: &#x27;2025-10-29T14:30:00Z&#x27;})<br />@IsDateString()<br />@IsOptional()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/prescription/dto/create-prescription.dto.ts:11</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/prescription/dto/create-prescription.dto.ts:18</a></div>
                         </td>
                     </tr>
 
@@ -289,6 +298,7 @@
                 <td class="col-md-4">
                     <a name="details"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
@@ -308,13 +318,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsArray()<br />@ValidateNested({each: true})<br />@Type(undefined)<br />
+                            @ApiProperty({name: &#x27;details&#x27;, type: undefined, description: &#x27;Lista de detalles específicos de la prescripción (dosis, horario, etc).&#x27;, example: undefined})<br />@IsArray()<br />@ValidateNested({each: true})<br />@Type(undefined)<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/prescription/dto/create-prescription.dto.ts:32</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/prescription/dto/create-prescription.dto.ts:83</a></div>
                         </td>
                     </tr>
 
@@ -327,6 +337,7 @@
                 <td class="col-md-4">
                     <a name="duration"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>duration</b></span>
                         <a href="#duration"><span class="icon ion-ios-link"></span></a>
@@ -344,13 +355,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsInt()<br />
+                            @ApiProperty({name: &#x27;duration&#x27;, type: Number, description: &#x27;Duración del tratamiento en días.&#x27;, example: 7})<br />@IsInt()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/prescription/dto/create-prescription.dto.ts:21</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/prescription/dto/create-prescription.dto.ts:49</a></div>
                         </td>
                     </tr>
 
@@ -363,6 +374,7 @@
                 <td class="col-md-4">
                     <a name="medicineId"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>medicineId</b></span>
                         <a href="#medicineId"><span class="icon ion-ios-link"></span></a>
@@ -380,13 +392,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsNumber()<br />
+                            @ApiProperty({name: &#x27;medicineId&#x27;, type: Number, description: &#x27;Identificador del medicamento asociado a la prescripción.&#x27;, example: 5})<br />@IsNumber()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/prescription/dto/create-prescription.dto.ts:27</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/prescription/dto/create-prescription.dto.ts:69</a></div>
                         </td>
                     </tr>
 
@@ -399,6 +411,7 @@
                 <td class="col-md-4">
                     <a name="observations"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>observations</b></span>
@@ -417,13 +430,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@IsOptional()<br />
+                            @ApiPropertyOptional({name: &#x27;observations&#x27;, type: String, description: &#x27;Observaciones médicas o indicaciones adicionales relacionadas con la prescripción.&#x27;, example: &#x27;Tomar el medicamento después de cada comida.&#x27;})<br />@IsString()<br />@IsOptional()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/prescription/dto/create-prescription.dto.ts:15</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/prescription/dto/create-prescription.dto.ts:29</a></div>
                         </td>
                     </tr>
 
@@ -436,6 +449,7 @@
                 <td class="col-md-4">
                     <a name="quantity"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>quantity</b></span>
                         <a href="#quantity"><span class="icon ion-ios-link"></span></a>
@@ -453,13 +467,13 @@
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsInt()<br />
+                            @ApiProperty({name: &#x27;quantity&#x27;, type: Number, description: &#x27;Cantidad del medicamento prescrita al paciente.&#x27;, example: 3})<br />@IsInt()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/prescription/dto/create-prescription.dto.ts:18</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/prescription/dto/create-prescription.dto.ts:39</a></div>
                         </td>
                     </tr>
 
@@ -481,31 +495,82 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Type } from &quot;class-transformer&quot;;
 import { IsInt, IsOptional, IsDateString , IsString, ValidateNested, IsArray, IsNumber } from &quot;class-validator&quot;;
 import { CreatePrescriptionDetailDto } from &quot;../../prescription-detail/dto/create-prescription-detail.dto&quot;;
+import { ApiProperty, ApiPropertyOptional } from &quot;@nestjs/swagger&quot;;
 
 
 // Create Prescription DTO
 export class CreatePrescriptionDto {
 
+    @ApiPropertyOptional({
+    name: &#x27;date&#x27;,
+    type: String,
+    description: &#x27;Fecha de creación de la prescripción (por defecto la actual).&#x27;,
+    example: &#x27;2025-10-29T14:30:00Z&#x27;,
+    })
     @IsDateString()
     @IsOptional()
     date?: Date;
 
+
+    @ApiPropertyOptional({
+    name: &#x27;observations&#x27;,
+    type: String,
+    description: &#x27;Observaciones médicas o indicaciones adicionales relacionadas con la prescripción.&#x27;,
+    example: &#x27;Tomar el medicamento después de cada comida.&#x27;,
+    })
     @IsString()
     @IsOptional()
     observations: string;
 
+
+    @ApiProperty({
+    name: &#x27;quantity&#x27;,
+    type: Number,
+    description: &#x27;Cantidad del medicamento prescrita al paciente.&#x27;,
+    example: 3,
+    })
     @IsInt()
     quantity: number;
 
+
+    @ApiProperty({
+    name: &#x27;duration&#x27;,
+    type: Number,
+    description: &#x27;Duración del tratamiento en días.&#x27;,
+    example: 7,
+    })
     @IsInt()
     duration: number;
 
+
+    @ApiProperty({
+    name: &#x27;appointmentId&#x27;,
+    type: Number,
+    description: &#x27;Identificador de la cita médica asociada a la prescripción.&#x27;,
+    example: 12,
+    })
     @IsNumber()
     appointmentId: number;
 
+
+    @ApiProperty({
+    name: &#x27;medicineId&#x27;,
+    type: Number,
+    description: &#x27;Identificador del medicamento asociado a la prescripción.&#x27;,
+    example: 5,
+    })
     @IsNumber()
     medicineId: number;
 
+
+    @ApiProperty({
+    name: &#x27;details&#x27;,
+    type: [CreatePrescriptionDetailDto],
+    description: &#x27;Lista de detalles específicos de la prescripción (dosis, horario, etc).&#x27;,
+    example: [
+        { dosage: &#x27;500mg&#x27;, frequency: &#x27;Cada 8 horas&#x27;, route: &#x27;Oral&#x27; }
+    ],
+    })
     @IsArray()
     @ValidateNested({each: true})
     @Type(() &#x3D;&gt; CreatePrescriptionDetailDto)

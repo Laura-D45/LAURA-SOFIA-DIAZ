@@ -141,14 +141,6 @@
         </p>
 
 
-            <p class="comment">
-                <h3>Description</h3>
-            </p>
-            <p class="comment">
-                <p>Objeto de transferencia de datos (DTO) para la creación de un detalle de prescripción.
-Contiene la dosis, duración, instrucciones y las IDs de las entidades relacionadas.</p>
-
-            </p>
 
 
 
@@ -168,9 +160,11 @@ Contiene la dosis, duración, instrucciones y las IDs de las entidades relaciona
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#dose" >dose</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#duration" >duration</a>
@@ -178,14 +172,17 @@ Contiene la dosis, duración, instrucciones y las IDs de las entidades relaciona
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#instrucitons" >instrucitons</a>
                             </li>
                             <li>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
+                                    <span class="modifier"></span>
                                 <a href="#medicineId" >medicineId</a>
                             </li>
                             <li>
+                                    <span class="modifier"></span>
                                     <span class="modifier"></span>
                                     <span class="modifier"></span>
                                 <a href="#prescriptionId" >prescriptionId</a>
@@ -217,6 +214,7 @@ Contiene la dosis, duración, instrucciones y las IDs de las entidades relaciona
                     <span class="name">
                             <span class="modifier"></span>
                             <span class="modifier"></span>
+                            <span class="modifier"></span>
                         <span ><b>dose</b></span>
                         <a href="#dose"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -233,22 +231,16 @@ Contiene la dosis, duración, instrucciones y las IDs de las entidades relaciona
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@IsNotEmpty()<br />
+                            @ApiProperty({name: &#x27;dose&#x27;, required: true, type: String, description: &#x27;Dosis del medicamento (por ejemplo: &quot;1 tableta cada 8 horas&quot;).&#x27;, example: &#x27;1 tableta cada 8 horas&#x27;})<br />@IsString()<br />@IsNotEmpty()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/prescription-detail/dto/create-prescription-detail.dto.ts:33</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/prescription-detail/dto/create-prescription-detail.dto.ts:42</a></div>
                         </td>
                     </tr>
 
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Dosis de la medicina, e.g., &#39;500mg&#39; o &#39;1 pastilla&#39;.</p>
-</div>
-                </td>
-            </tr>
 
         </tbody>
     </table>
@@ -258,6 +250,7 @@ Contiene la dosis, duración, instrucciones y las IDs de las entidades relaciona
                 <td class="col-md-4">
                     <a name="duration"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>duration</b></span>
@@ -276,13 +269,13 @@ Contiene la dosis, duración, instrucciones y las IDs de las entidades relaciona
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsInt()<br />@IsNotEmpty()<br />
+                            @ApiProperty({name: &#x27;duration&#x27;, required: true, type: Number, description: &#x27;Duración del tratamiento en días.&#x27;, example: 7})<br />@IsInt()<br />@IsNotEmpty()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/prescription-detail/dto/create-prescription-detail.dto.ts:37</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/prescription-detail/dto/create-prescription-detail.dto.ts:54</a></div>
                         </td>
                     </tr>
 
@@ -295,6 +288,7 @@ Contiene la dosis, duración, instrucciones y las IDs de las entidades relaciona
                 <td class="col-md-4">
                     <a name="instrucitons"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>instrucitons</b></span>
@@ -313,13 +307,13 @@ Contiene la dosis, duración, instrucciones y las IDs de las entidades relaciona
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsString()<br />@IsNotEmpty()<br />
+                            @ApiProperty({name: &#x27;instructions&#x27;, required: true, type: String, description: &#x27;Instrucciones o recomendaciones adicionales.&#x27;, example: &#x27;Tomar después de las comidas&#x27;})<br />@IsString()<br />@IsNotEmpty()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/prescription-detail/dto/create-prescription-detail.dto.ts:41</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/prescription-detail/dto/create-prescription-detail.dto.ts:66</a></div>
                         </td>
                     </tr>
 
@@ -332,6 +326,7 @@ Contiene la dosis, duración, instrucciones y las IDs de las entidades relaciona
                 <td class="col-md-4">
                     <a name="medicineId"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>medicineId</b></span>
@@ -350,23 +345,16 @@ Contiene la dosis, duración, instrucciones y las IDs de las entidades relaciona
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsInt()<br />@IsNotEmpty()<br />
+                            @ApiProperty({name: &#x27;medicineId&#x27;, required: true, type: Number, description: &#x27;ID del medicamento asociado a la prescripción.&#x27;, example: 12})<br />@IsInt()<br />@IsNotEmpty()<br />
                         </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/prescription-detail/dto/create-prescription-detail.dto.ts:26</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/prescription-detail/dto/create-prescription-detail.dto.ts:30</a></div>
                         </td>
                     </tr>
 
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>El ID de la medicina.
-Se revisa la tabla medicine para este atributo.</p>
-</div>
-                </td>
-            </tr>
 
         </tbody>
     </table>
@@ -376,6 +364,7 @@ Se revisa la tabla medicine para este atributo.</p>
                 <td class="col-md-4">
                     <a name="prescriptionId"></a>
                     <span class="name">
+                            <span class="modifier"></span>
                             <span class="modifier"></span>
                             <span class="modifier"></span>
                         <span ><b>prescriptionId</b></span>
@@ -394,7 +383,7 @@ Se revisa la tabla medicine para este atributo.</p>
                         <b>Decorators : </b>
                         <br />
                         <code>
-                            @IsInt()<br />@IsNotEmpty()<br />
+                            @ApiProperty({name: &#x27;prescriptionId&#x27;, required: true, type: Number, description: &#x27;ID de la prescripción a la que pertenece este detalle.&#x27;, example: 5})<br />@IsInt()<br />@IsNotEmpty()<br />
                         </code>
                     </td>
                 </tr>
@@ -404,13 +393,6 @@ Se revisa la tabla medicine para este atributo.</p>
                         </td>
                     </tr>
 
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>El ID de la prescription
-Se genera auntomaticamente</p>
-</div>
-                </td>
-            </tr>
 
         </tbody>
     </table>
@@ -426,44 +408,69 @@ Se genera auntomaticamente</p>
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { IsInt, IsNotEmpty, IsString } from &quot;class-validator&quot;;
-/**
- * Objeto de transferencia de datos (DTO) para la creación de un detalle de prescripción.
- * Contiene la dosis, duración, instrucciones y las IDs de las entidades relacionadas.
- */
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ApiProperty } from &quot;@nestjs/swagger&quot;;
+import { IsInt, IsNotEmpty, IsString } from &quot;class-validator&quot;;
+
 
 // Create Prescription Detail DTO
 export class CreatePrescriptionDetailDto {
-
-    /**
-     * El ID de la prescription
-     * Se genera auntomaticamente
-     */
-
+    @ApiProperty({
+    name: &#x27;prescriptionId&#x27;,
+    required: true,
+    type: Number,
+    description: &#x27;ID de la prescripción a la que pertenece este detalle.&#x27;,
+    example: 5,
+    })
+    
     @IsInt()
     @IsNotEmpty()
     prescriptionId: number;
     
-    /**
-     * El ID de la medicina.
-     * Se revisa la tabla medicine para este atributo.
-     */
 
+
+    @ApiProperty({
+    name: &#x27;medicineId&#x27;,
+    required: true,
+    type: Number,
+    description: &#x27;ID del medicamento asociado a la prescripción.&#x27;,
+    example: 12,
+    })
     @IsInt()
     @IsNotEmpty()
     medicineId: number;
 
-        /**
-     * Dosis de la medicina, e.g., &#x27;500mg&#x27; o &#x27;1 pastilla&#x27;.
-     */
+
+    @ApiProperty({
+    name: &#x27;dose&#x27;,
+    required: true,
+    type: String,
+    description: &#x27;Dosis del medicamento (por ejemplo: &quot;1 tableta cada 8 horas&quot;).&#x27;,
+    example: &#x27;1 tableta cada 8 horas&#x27;,
+    })
     @IsString()
     @IsNotEmpty()
     dose: string;
 
+
+    @ApiProperty({
+    name: &#x27;duration&#x27;,
+    required: true,
+    type: Number,
+    description: &#x27;Duración del tratamiento en días.&#x27;,
+    example: 7,
+    })
     @IsInt()
     @IsNotEmpty()
     duration: number;
 
+
+    @ApiProperty({
+    name: &#x27;instructions&#x27;,
+    required: true,
+    type: String,
+    description: &#x27;Instrucciones o recomendaciones adicionales.&#x27;,
+    example: &#x27;Tomar después de las comidas&#x27;,
+    })
     @IsString()
     @IsNotEmpty()
     instrucitons: string;
